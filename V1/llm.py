@@ -34,29 +34,55 @@ def safe_json_parse(text: str) -> dict | None:
 
     text = text.strip()
 
-    if "`" + "json" in text:
+    # Strip markdown code fences if present
+    if "```json" in text:
         try:
-            start = text.index("`" + "json") + 7
-            end = text.index("`" + "", start)
+            start = text.index("```json") + 7
+            end = text.index("```", start)
             text = text[start:end].strip()
-        except:
+        except ValueError:
             pass
-    elif "`" + "" in text:
+    elif "```" in text:
         try:
-            start = text.index("`" + "") + 3
-            end = text.index("`" + "", start)
+            start = text.index("```") + 3
+            end = text.index("```", start)
             text = text[start:end].strip()
-        except:
+        except ValueError:
             pass
 
+    # If text starts with a quote (missing opening brace), wrap it
+    if text.startswith('"') and '{' not in text[:5]:
+        text = '{' + text
+
+    # If text doesn't end with } (truncated), try to close it
+    if '{' in text and '}' not in text:
+        text = text + '}'
+
+    # Find outermost { ... } block
     try:
         start = text.index("{")
-        end = text.rindex("}") + 1
-        json_str = text[start:end]
+        # Find matching closing brace by counting depth
+        depth = 0
+        end = start
+        for i in range(start, len(text)):
+            if text[i] == '{':
+                depth += 1
+            elif text[i] == '}':
+                depth -= 1
+                if depth == 0:
+                    end = i + 1
+                    break
+
+        if end <= start:
+            # No matching close found, take everything from { and close it
+            json_str = text[start:] + '}'
+        else:
+            json_str = text[start:end]
+
         return json.loads(json_str)
     except Exception as e:
         print(f"Warning: JSON parse error: {e}")
-        print(f"Text: {text[:200]}")
+        print(f"Text: {text[:300]}")
         return None
 
 

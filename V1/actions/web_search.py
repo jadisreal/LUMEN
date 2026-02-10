@@ -1,6 +1,6 @@
 import re
 import time
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 from tts import speak
 
 

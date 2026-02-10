@@ -19,14 +19,20 @@
     },
     "default_message_platform": {
       "value": "WhatsApp"
+    },
+    "default_browser": {
+      "value": true
     }
   },
   "relationships": {
     "user": {
       "value": "Chart"
+    },
+    "gabrielle": {
+      "value": "contacted"
     }
   },
   "emotional_state": {
-    "value": "friendly"
+    "value": "neutral"
   }
 }
