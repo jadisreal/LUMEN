@@ -1,0 +1,32 @@
+{
+  "identity": {
+    "name": {
+      "value": "Chart"
+    },
+    "user_name": {
+      "value": "Chart"
+    },
+    "assistant_name": {
+      "value": "Lumen"
+    }
+  },
+  "preferences": {
+    "preferred_communication": {
+      "value": "WhatsApp"
+    },
+    "message_platform": {
+      "value": "WhatsApp"
+    },
+    "default_message_platform": {
+      "value": "WhatsApp"
+    }
+  },
+  "relationships": {
+    "user": {
+      "value": "Chart"
+    }
+  },
+  "emotional_state": {
+    "value": "neutral"
+  }
+}
