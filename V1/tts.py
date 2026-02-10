@@ -69,10 +69,10 @@ def speak(text: str, ui=None, blocking=False):
                 frames_per_buffer=1024
             )
 
-            for audio_bytes in voice.synthesize_stream_raw(text.strip()):
+            for chunk in voice.synthesize(text.strip()):
                 if stop_speaking_flag.is_set():
                     break
-                stream.write(audio_bytes)
+                stream.write(chunk.audio_int16_bytes)
 
             stream.stop_stream()
             stream.close()
