@@ -1,28 +1,33 @@
 import os
 import time
 import random
-import tkinter as tk
+import customtkinter as ctk
 from collections import deque
 from PIL import Image, ImageTk, ImageDraw, ImageFilter
-from tkinter.scrolledtext import ScrolledText
+
+
+ctk.set_appearance_mode("dark")
+ctk.set_default_color_theme("blue")
 
 
 class LumenUI:
     def __init__(self, face_path, size=(760, 760)):
-        self.root = tk.Tk()
+        self.root = ctk.CTk()
         self.root.title("L.U.M.E.N")
         self.root.resizable(False, False)
-        self.root.geometry("760x900")
-        self.root.configure(bg="#000000")
+        self.root.geometry("760x960")
+        self.root.configure(fg_color="#0a0a0f")
 
         self.size = size
-        self.center_y = 0.42
+        self.center_y = 0.38
 
+        # --- Face canvas (still tk.Canvas for image compositing) ---
+        import tkinter as tk
         self.canvas = tk.Canvas(
             self.root,
             width=size[0],
             height=size[1],
-            bg="#000000",
+            bg="#0a0a0f",
             highlightthickness=0
         )
         self.canvas.place(relx=0.5, rely=self.center_y, anchor="center")
@@ -42,19 +47,31 @@ class LumenUI:
         self.target_halo_alpha = 70
         self.last_target_time = time.time()
 
-        self.text_box = ScrolledText(
+        # --- Status indicator ---
+        self.status_label = ctk.CTkLabel(
             self.root,
-            fg="#8ffcff",
-            bg="#000000",
-            insertbackground="#8ffcff",
-            height=12,
-            borderwidth=0,
+            text="● IDLE",
+            font=("Consolas", 11, "bold"),
+            text_color="#3a9bdc",
+            fg_color="transparent",
+            anchor="w"
+        )
+        self.status_label.place(relx=0.04, rely=0.70)
+
+        # --- Log text box ---
+        self.text_box = ctk.CTkTextbox(
+            self.root,
+            text_color="#c0e8ff",
+            fg_color="#0d1117",
+            border_color="#1a3a5c",
+            border_width=1,
+            corner_radius=8,
+            height=180,
+            width=710,
             wrap="word",
             font=("Consolas", 10),
-            padx=12,
-            pady=12
         )
-        self.text_box.place(relx=0.5, rely=0.86, anchor="center")
+        self.text_box.place(relx=0.5, rely=0.84, anchor="center")
         self.text_box.configure(state="disabled")
 
         self.typing_queue = deque()
@@ -80,6 +97,10 @@ class LumenUI:
 
         return img.filter(ImageFilter.GaussianBlur(30))
 
+    def set_status(self, text: str, color: str = "#3a9bdc"):
+        """Update the status indicator."""
+        self.status_label.configure(text=f"● {text}", text_color=color)
+
     def write_log(self, text: str):
         self.typing_queue.append(text)
         if not self.is_typing:
@@ -98,19 +119,21 @@ class LumenUI:
 
     def _type_char(self, text, i):
         if i < len(text):
-            self.text_box.insert(tk.END, text[i])
-            self.text_box.see(tk.END)
+            self.text_box.insert("end", text[i])
+            self.text_box.see("end")
             self.root.after(12, self._type_char, text, i + 1)
         else:
-            self.text_box.insert(tk.END, "\n")
+            self.text_box.insert("end", "\n")
             self.text_box.configure(state="disabled")
             self.root.after(40, self._start_typing)
 
     def start_speaking(self):
         self.speaking = True
+        self.set_status("SPEAKING", "#00d4aa")
 
     def stop_speaking(self):
         self.speaking = False
+        self.set_status("LISTENING", "#3a9bdc")
 
     def _animate(self):
         now = time.time()
@@ -131,7 +154,7 @@ class LumenUI:
         self.scale += (self.target_scale - self.scale) * scale_speed
         self.halo_alpha += (self.target_halo_alpha - self.halo_alpha) * halo_speed
 
-        frame = Image.new("RGBA", self.size, (0, 0, 0, 255))
+        frame = Image.new("RGBA", self.size, (10, 10, 15, 255))
 
         halo = self.halo_base.copy()
         halo.putalpha(int(self.halo_alpha))
