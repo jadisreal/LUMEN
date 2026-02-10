@@ -6,6 +6,6 @@ echo.
 echo Activating virtual environment...
 call "D:\Jarvis-Mark-X\venv\Scripts\activate.bat"
 echo Activated. Starting LUMEN...
-cd /d "D:\Jarvis-Mark-X\MarkX"
+cd /d "D:\Jarvis-Mark-X\V1"
 "D:\Jarvis-Mark-X\venv\Scripts\python.exe" main.py
 pause

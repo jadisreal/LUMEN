@@ -16,7 +16,7 @@ class LumenUI:
         self.root.title("L.U.M.E.N")
         self.root.resizable(False, False)
         self.root.geometry("760x960")
-        self.root.configure(fg_color="#0a0a0f")
+        self.root.configure(fg_color="#e4a700")
 
         self.size = size
         self.center_y = 0.38
@@ -27,7 +27,7 @@ class LumenUI:
             self.root,
             width=size[0],
             height=size[1],
-            bg="#0a0a0f",
+            bg="#12121b",
             highlightthickness=0
         )
         self.canvas.place(relx=0.5, rely=self.center_y, anchor="center")
@@ -61,9 +61,9 @@ class LumenUI:
         # --- Log text box ---
         self.text_box = ctk.CTkTextbox(
             self.root,
-            text_color="#c0e8ff",
-            fg_color="#0d1117",
-            border_color="#1a3a5c",
+            text_color="#d89400",
+            fg_color="#17160d",
+            border_color="#5c381a",
             border_width=1,
             corner_radius=8,
             height=180,

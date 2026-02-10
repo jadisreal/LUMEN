@@ -1,8 +1,6 @@
-﻿# tts.py - Piper TTS (fully offline)
+﻿# tts.py - Piper TTS (fully offline, raw PCM streaming)
 
 import os
-import io
-import wave
 import threading
 import pyaudio
 
@@ -38,7 +36,7 @@ def _get_voice():
             raise FileNotFoundError(
                 f"No Piper .onnx model found in {PIPER_MODEL_DIR}\n"
                 "Download a voice from: https://huggingface.co/rhasspy/piper-voices\n"
-                "Place the .onnx and .onnx.json files in MarkX/models/piper/"
+                "Place the .onnx and .onnx.json files in V1/models/piper/"
             )
 
         print(f"Loading Piper voice: {os.path.basename(model_path)}")
@@ -48,7 +46,7 @@ def _get_voice():
 
 
 def speak(text: str, ui=None, blocking=False):
-    """Synthesize text with Piper TTS and play via PyAudio."""
+    """Synthesize text with Piper TTS and stream raw PCM to PyAudio."""
     if not text or not text.strip():
         return
 
@@ -62,33 +60,23 @@ def speak(text: str, ui=None, blocking=False):
         try:
             voice = _get_voice()
 
-            wav_buffer = io.BytesIO()
-            with wave.open(wav_buffer, "wb") as wav_file:
-                voice.synthesize(text.strip(), wav_file)
+            p = pyaudio.PyAudio()
+            stream = p.open(
+                format=pyaudio.paInt16,
+                channels=1,
+                rate=voice.config.sample_rate,
+                output=True,
+                frames_per_buffer=1024
+            )
 
-            wav_buffer.seek(0)
+            for audio_bytes in voice.synthesize_stream_raw(text.strip()):
+                if stop_speaking_flag.is_set():
+                    break
+                stream.write(audio_bytes)
 
-            with wave.open(wav_buffer, "rb") as wf:
-                p = pyaudio.PyAudio()
-                stream = p.open(
-                    format=p.get_format_from_width(wf.getsampwidth()),
-                    channels=wf.getnchannels(),
-                    rate=wf.getframerate(),
-                    output=True,
-                    frames_per_buffer=1024
-                )
-
-                chunk_size = 1024
-                data = wf.readframes(chunk_size)
-                while data:
-                    if stop_speaking_flag.is_set():
-                        break
-                    stream.write(data)
-                    data = wf.readframes(chunk_size)
-
-                stream.stop_stream()
-                stream.close()
-                p.terminate()
+            stream.stop_stream()
+            stream.close()
+            p.terminate()
 
         except FileNotFoundError as e:
             print(f"PIPER ERROR: {e}")
