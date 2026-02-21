@@ -2,7 +2,19 @@
 import time
 import subprocess
 import pyautogui
+import pyperclip
 from tts import speak
+from core.logger import get_logger
+
+log = get_logger("action.app")
+
+
+def _clipboard_type(text: str):
+    """Copy text to clipboard and paste with Ctrl+V (handles Unicode)."""
+    pyperclip.copy(text)
+    time.sleep(0.05)
+    pyautogui.hotkey("ctrl", "v")
+    time.sleep(0.1)
 
 
 # Direct launch paths/commands - much faster & more reliable than Windows Search
@@ -49,7 +61,8 @@ def _launch_shell(command: str) -> bool:
     try:
         subprocess.Popen(command, shell=True)
         return True
-    except Exception:
+    except Exception as e:
+        log.error(f"Shell launch failed for '{command}': {e}")
         return False
 
 
@@ -57,25 +70,27 @@ def _launch_search(search_term: str) -> bool:
     try:
         pyautogui.PAUSE = 0.1
         pyautogui.press("win")
+        time.sleep(0.5)
+        _clipboard_type(search_term)
         time.sleep(0.4)
-        pyautogui.write(search_term, interval=0.03)
-        time.sleep(0.3)
         pyautogui.press("enter")
         return True
-    except Exception:
+    except Exception as e:
+        log.error(f"Windows Search launch failed for '{search_term}': {e}", exc_info=True)
         return False
 
 
 def open_app(
-    parameters: dict,
-    response: str | None = None,
+    parameters=None,
+    response=None,
     player=None,
-    session_memory=None
+    session_memory=None,
+    **kwargs
 ) -> bool:
     app_name = (parameters or {}).get("app_name", "").strip()
 
     if not app_name and session_memory:
-        app_name = session_memory.open_app or ""
+        app_name = session_memory.last_opened_app or ""
 
     if not app_name:
         msg = "I couldn't determine which application to open, Chart."
@@ -87,7 +102,8 @@ def open_app(
     if response:
         if player:
             player.write_log(response)
-        speak(response, player)
+        speak(response, player, blocking=True)  # block so TTS finishes before Win key
+        time.sleep(0.3)
 
     normalized = _normalize(app_name)
 

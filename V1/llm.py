@@ -3,7 +3,11 @@
 import os
 import json
 import requests
+from datetime import datetime
 from dotenv import load_dotenv
+from core.logger import get_logger
+
+log = get_logger("llm")
 
 load_dotenv()
 
@@ -14,6 +18,25 @@ LMSTUDIO_URL = os.getenv("LMSTUDIO_URL", "http://localhost:1234/v1/chat/completi
 LMSTUDIO_MODEL = os.getenv("LMSTUDIO_MODEL", "")
 
 PROMPT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "core", "prompt.txt")
+USER_PROFILE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "user_profile.txt")
+
+
+def _load_user_profile() -> str:
+    """Load user profile from user_profile.txt for prompt injection."""
+    try:
+        with open(USER_PROFILE_PATH, "r", encoding="utf-8") as f:
+            lines = []
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    lines.append(line)
+            if lines:
+                return "User profile:\n" + "\n".join(f"  {l}" for l in lines)
+    except FileNotFoundError:
+        log.warning("user_profile.txt not found, using defaults.")
+    except Exception as e:
+        log.warning(f"Failed to load user profile: {e}")
+    return "User profile:\n  name: User"
 
 
 def load_system_prompt() -> str:
@@ -21,7 +44,7 @@ def load_system_prompt() -> str:
         with open(PROMPT_PATH, "r", encoding="utf-8") as f:
             return f.read()
     except Exception as e:
-        print(f"Warning: prompt.txt not found: {e}")
+        log.warning(f"prompt.txt not found: {e}")
         return "You are Lumen, a helpful AI assistant."
 
 
@@ -81,8 +104,7 @@ def safe_json_parse(text: str) -> dict | None:
 
         return json.loads(json_str)
     except Exception as e:
-        print(f"Warning: JSON parse error: {e}")
-        print(f"Text: {text[:300]}")
+        log.warning(f"JSON parse error: {e} | Raw: {text[:200]}")
         return None
 
 
@@ -107,9 +129,18 @@ def get_llm_output(user_text: str, memory_block: dict = None) -> dict:
 Known user memory:
 {memory_str if memory_str else "No memory available"}"""
 
+    # Inject current date/time and user profile into system prompt
+    now = datetime.now()
+    date_str = now.strftime("%A, %B %d, %Y at %I:%M %p")
+    profile_str = _load_user_profile()
+
+    system_prompt = SYSTEM_PROMPT
+    system_prompt = system_prompt.replace("{current_datetime}", date_str)
+    system_prompt = system_prompt.replace("{user_profile}", profile_str)
+
     payload = {
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ],
         "temperature": 0.2,
@@ -134,7 +165,7 @@ Known user memory:
         )
 
         if response.status_code != 200:
-            print(f"LM Studio API Error: {response.text}")
+            log.error(f"LM Studio API {response.status_code}: {response.text[:200]}")
             return {
                 "intent": "chat",
                 "parameters": {},
@@ -165,27 +196,29 @@ Known user memory:
         }
 
     except requests.exceptions.ConnectionError:
-        print("ERROR: Cannot connect to LM Studio. Is it running at localhost:1234?")
+        log.error(f"Cannot connect to LM Studio at {LMSTUDIO_URL}")
         return {
             "intent": "chat",
-            "text": "I can't reach LM Studio. Please make sure it's running.",
+            "text": "LLM is offline. Please launch my brain in order to proceed via LM Studio. Thank you.",
             "parameters": {},
             "needs_clarification": False,
-            "memory_update": None
+            "memory_update": None,
+            "offline": True
         }
 
     except requests.exceptions.Timeout:
-        print("LM Studio timeout!")
+        log.warning("LM Studio request timed out (90s)")
         return {
             "intent": "chat",
-            "text": "The model took too long to respond, Chart.",
+            "text": "The model took too long to respond. Please check LM Studio.",
             "parameters": {},
             "needs_clarification": False,
-            "memory_update": None
+            "memory_update": None,
+            "offline": True
         }
 
     except Exception as e:
-        print(f"LLM ERROR: {e}")
+        log.error(f"LLM error: {e}", exc_info=True)
         return {
             "intent": "chat",
             "text": "I encountered a system error.",

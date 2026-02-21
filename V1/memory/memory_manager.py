@@ -3,8 +3,12 @@ import json
 import os
 from threading import Lock
 from datetime import datetime
+from core.logger import get_logger
 
-MEMORY_PATH = "memory/memory.json"
+log = get_logger("memory")
+
+# Use absolute path relative to this file, not cwd
+MEMORY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "memory.json")
 _lock = Lock()
 
 

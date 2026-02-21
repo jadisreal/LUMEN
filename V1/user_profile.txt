@@ -1,0 +1,7 @@
+# LUMEN User Profile
+# Edit this file to customize how Lumen knows and addresses you.
+# Lines starting with # are comments and are ignored.
+
+name: Chart
+location: Davao City, Philippines
+preferred_platform: WhatsApp

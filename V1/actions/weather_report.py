@@ -1,5 +1,8 @@
 import requests
 from tts import speak
+from core.logger import get_logger
+
+log = get_logger("action.weather")
 
 # Open-Meteo geocoding + forecast (free, no API key)
 GEOCODE_URL = "https://geocoding-api.open-meteo.com/v1/search"
@@ -27,7 +30,8 @@ def _geocode(city: str) -> tuple[float, float, str] | None:
             return None
         r = results[0]
         return r["latitude"], r["longitude"], r.get("name", city)
-    except Exception:
+    except Exception as e:
+        log.error(f"Geocoding failed for '{city}': {e}")
         return None
 
 
@@ -44,14 +48,17 @@ def _get_forecast(lat: float, lon: float) -> dict | None:
         resp = requests.get(FORECAST_URL, params=params, timeout=10)
         data = resp.json()
         return data.get("current")
-    except Exception:
+    except Exception as e:
+        log.error(f"Forecast fetch failed: {e}")
         return None
 
 
 def weather_action(
-    parameters: dict,
+    parameters=None,
+    response=None,
     player=None,
-    session_memory=None
+    session_memory=None,
+    **kwargs
 ):
     """
     Weather report action.
@@ -110,6 +117,6 @@ def _speak_and_log(message: str, player=None):
             pass
 
     try:
-        speak(message)
+        speak(message, player)
     except Exception:
         pass

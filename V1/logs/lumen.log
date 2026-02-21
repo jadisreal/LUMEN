@@ -1,0 +1,1054 @@
+2026-02-13 13:35:04 │ INFO    │ test           │ Logger works
+2026-02-13 13:57:45 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-13 13:57:46 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-13 13:57:47 │ INFO    │ main           │ ==================================================
+2026-02-13 13:57:47 │ INFO    │ main           │ LUMEN starting up
+2026-02-13 13:57:47 │ INFO    │ main           │ ==================================================
+2026-02-13 13:57:47 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-13 13:57:47 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-13 13:57:47 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-13 13:57:47 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-13 13:57:47 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-13 13:57:47 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 13:57:47 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 13:57:56 │ INFO    │ stt            │ You: Lumin wake up
+2026-02-13 13:57:56 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 13:57:56 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 13:58:00 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 13:58:00 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 13:58:04 │ INFO    │ stt            │ You: Cup.
+2026-02-13 13:58:04 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 13:58:04 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 13:58:10 │ INFO    │ stt            │ You: Lumen wake up
+2026-02-13 13:58:10 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-13 13:58:10 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 13:58:10 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-13 13:58:10 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-13 13:58:12 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 13:58:12 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-13 13:58:12 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-13 13:58:15 │ INFO    │ stt            │ You: So wait
+2026-02-13 13:58:15 │ INFO    │ main           │ User: So wait
+2026-02-13 13:58:18 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-13 13:58:18 │ DEBUG   │ main           │ LLM response: What do you mean by 'so wait'?
+2026-02-13 13:58:18 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 13:58:18 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:04:32 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-13 14:04:34 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-13 14:04:34 │ INFO    │ main           │ ==================================================
+2026-02-13 14:04:34 │ INFO    │ main           │ LUMEN starting up
+2026-02-13 14:04:34 │ INFO    │ main           │ ==================================================
+2026-02-13 14:04:34 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-13 14:04:34 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-13 14:04:34 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-13 14:04:34 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-13 14:04:34 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-13 14:04:34 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:04:35 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:04:42 │ INFO    │ stt            │ You: Lumen Wake Up
+2026-02-13 14:04:42 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-13 14:04:42 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:04:42 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-13 14:04:42 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-13 14:04:43 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:04:43 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-13 14:04:44 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-13 14:04:48 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:04:48 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:04:53 │ INFO    │ stt            │ You: Hope in what's up
+2026-02-13 14:04:53 │ INFO    │ main           │ User: Hope in what's up
+2026-02-13 14:04:56 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-13 14:04:56 │ DEBUG   │ main           │ LLM response: Your response here.
+2026-02-13 14:04:56 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:04:56 │ DEBUG   │ piper.voice    │ text=Your response here., phonemes=[['j', 'ʊ', 'ɹ', ' ', 'ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'h', 'ˈ', 'ɪ', 'ɹ', '.']]
+2026-02-13 14:14:56 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-13 14:14:57 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-13 14:14:58 │ INFO    │ main           │ ==================================================
+2026-02-13 14:14:58 │ INFO    │ main           │ LUMEN starting up
+2026-02-13 14:14:58 │ INFO    │ main           │ ==================================================
+2026-02-13 14:14:58 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-13 14:14:58 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-13 14:14:58 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-13 14:14:58 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-13 14:14:58 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-13 14:14:58 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:14:58 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:15:05 │ INFO    │ stt            │ You: Loom and wake up
+2026-02-13 14:15:05 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:15:05 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:15:10 │ INFO    │ stt            │ You: Let's get out of the box and get back to the room.
+2026-02-13 14:15:10 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:15:10 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:15:19 │ INFO    │ stt            │ You: Lumen wake up
+2026-02-13 14:15:19 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-13 14:15:19 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:15:20 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-13 14:15:20 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-13 14:15:21 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-13 14:15:21 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:15:22 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-13 14:15:25 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:15:25 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:15:41 │ INFO    │ stt            │ You: Hi, I'm Steve. Hello. Hello, hi. Hello, hi. Hello. Hello. Open, what's up? Hello.
+2026-02-13 14:15:41 │ INFO    │ main           │ User: Hi, I'm Steve. Hello. Hello, hi. Hello, hi. Hello. Hello. Open, what's up? Hello.
+2026-02-13 14:15:47 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'WhatsApp'}
+2026-02-13 14:15:47 │ DEBUG   │ main           │ LLM response: Opening WhatsApp for you, Steve.
+2026-02-13 14:15:47 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:15:48 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:20:38 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-13 14:20:40 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-13 14:20:40 │ INFO    │ main           │ ==================================================
+2026-02-13 14:20:40 │ INFO    │ main           │ LUMEN starting up
+2026-02-13 14:20:40 │ INFO    │ main           │ ==================================================
+2026-02-13 14:20:40 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-13 14:20:40 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-13 14:20:40 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-13 14:20:40 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-13 14:20:40 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-13 14:20:40 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:20:40 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:20:46 │ INFO    │ stt            │ You: Lumen wake up
+2026-02-13 14:20:46 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-13 14:20:46 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:20:46 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-13 14:20:46 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-13 14:20:47 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-13 14:20:47 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-13 14:20:48 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-13 14:20:55 │ INFO    │ stt            │ You: I hope it was hot.
+2026-02-13 14:20:55 │ INFO    │ main           │ User: I hope it was hot.
+2026-02-13 14:21:02 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-13 14:21:02 │ DEBUG   │ main           │ LLM response: I'm not sure what you mean by 'hot.' Did you mean the weather or something else?
+2026-02-13 14:21:02 │ DEBUG   │ stt            │ I'm listening...
+2026-02-13 14:21:02 │ DEBUG   │ piper.voice    │ text=I'm not sure what you mean by 'hot.' Did you mean the weather or something else?, phonemes=[['a', 'ɪ', 'm', ' ', 'n', 'ˌ', 'ɑ', 'ː', 't', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'w', 'ʌ', 't', ' ', 'j', 'u', 'ː', ' ', 'm', 'ˈ', 'i', 'ː', 'n', ' ', 'b', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɑ', 'ː', 't', '.'], ['d', 'ˈ', 'ɪ', 'd', ' ', 'j', 'u', 'ː', ' ', 'm', 'ˈ', 'i', 'ː', 'n', ' ', 'ð', 'ə', ' ', 'w', 'ˈ', 'ɛ', 'ð', 'ɚ', ' ', 'ɔ', 'ː', 'ɹ', ' ', 's', 'ˈ', 'ʌ', 'm', 'θ', 'ɪ', 'ŋ', ' ', 'ˈ', 'ɛ', 'l', 's', '?']]
+2026-02-13 14:33:51 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-13 14:33:51 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-13 14:33:51 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-13 14:33:51 │ DEBUG   │ piper.voice    │ Guessing voice config path: models/piper/en_US-lessac-medium.onnx.json
+2026-02-13 14:33:55 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-13 14:33:55 │ INFO    │ audio          │ Initializing shared PyAudio (PortAudio).
+2026-02-13 14:34:01 │ DEBUG   │ piper.voice    │ text=Response 1, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'w', 'ˈ', 'ʌ', 'n']]
+2026-02-13 14:34:03 │ DEBUG   │ piper.voice    │ text=Response 2, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 't', 'ˈ', 'u', 'ː']]
+2026-02-13 14:34:04 │ DEBUG   │ piper.voice    │ text=Response 3, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'θ', 'ɹ', 'ˈ', 'i', 'ː']]
+2026-02-13 14:34:06 │ DEBUG   │ piper.voice    │ text=Response 4, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ']]
+2026-02-13 14:34:07 │ DEBUG   │ piper.voice    │ text=Response 5, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'f', 'ˈ', 'a', 'ɪ', 'v']]
+2026-02-13 14:34:09 │ DEBUG   │ piper.voice    │ text=Response 6, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 's', 'ˈ', 'ɪ', 'k', 's']]
+2026-02-13 14:34:10 │ DEBUG   │ piper.voice    │ text=Response 7, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n']]
+2026-02-13 14:34:11 │ DEBUG   │ piper.voice    │ text=Response 8, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'ˈ', 'e', 'ɪ', 't']]
+2026-02-13 14:34:13 │ DEBUG   │ piper.voice    │ text=Response 9, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 'n', 'ˈ', 'a', 'ɪ', 'n']]
+2026-02-13 14:34:14 │ DEBUG   │ piper.voice    │ text=Response 10, phonemes=[['ɹ', 'ᵻ', 's', 'p', 'ˈ', 'ɑ', 'ː', 'n', 's', ' ', 't', 'ˈ', 'ɛ', 'n']]
+2026-02-18 09:55:16 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-18 09:55:20 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-18 09:55:22 │ INFO    │ main           │ ==================================================
+2026-02-18 09:55:22 │ INFO    │ main           │ LUMEN starting up
+2026-02-18 09:55:22 │ INFO    │ main           │ ==================================================
+2026-02-18 09:55:23 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-18 09:55:23 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-18 09:55:23 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-18 09:55:23 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-18 09:55:23 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-18 09:55:23 │ DEBUG   │ stt            │ I'm listening...
+2026-02-18 09:55:23 │ INFO    │ audio          │ Initializing shared PyAudio (PortAudio).
+2026-02-18 09:55:23 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:21:34 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-21 07:21:37 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-21 07:21:38 │ INFO    │ main           │ ==================================================
+2026-02-21 07:21:38 │ INFO    │ main           │ LUMEN starting up
+2026-02-21 07:21:38 │ INFO    │ main           │ ==================================================
+2026-02-21 07:21:39 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-21 07:21:39 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-21 07:21:39 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-21 07:21:39 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-21 07:21:39 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-21 07:21:39 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:21:39 │ INFO    │ audio          │ Initializing shared PyAudio (PortAudio).
+2026-02-21 07:21:39 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:21:52 │ INFO    │ stt            │ You: Hello, Lumen.
+2026-02-21 07:21:52 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:21:52 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:22:09 │ DEBUG   │ stt            │ Filtered hallucination: 'up.'
+2026-02-21 07:22:09 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:22:09 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:22:18 │ INFO    │ stt            │ You: Lumen wake up.
+2026-02-21 07:22:18 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 07:22:18 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:22:18 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:22:18 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-21 07:22:18 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-21 07:22:20 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-21 07:22:22 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 07:22:38 │ INFO    │ stt            │ You: I'm awake. How can I help you, Charter? Open WhatsApp. Open WhatsApp.
+2026-02-21 07:22:38 │ INFO    │ main           │ User: I'm awake. How can I help you, Charter? Open WhatsApp. Open WhatsApp.
+2026-02-21 07:22:42 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:22:42 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:22:42 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:22:42 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:22:42 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:22:42 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:22:48 │ INFO    │ stt            │ You: I can't reach a lens to you. Please make sure it's running.
+2026-02-21 07:22:48 │ INFO    │ main           │ User: I can't reach a lens to you. Please make sure it's running.
+2026-02-21 07:22:52 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:22:52 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:22:52 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:22:52 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:22:52 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:22:52 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:22:57 │ INFO    │ stt            │ You: I can't reach a lab studio, please make sure it's running.
+2026-02-21 07:22:57 │ INFO    │ main           │ User: I can't reach a lab studio, please make sure it's running.
+2026-02-21 07:23:02 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:23:02 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:02 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:23:02 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:02 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:02 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:23:07 │ INFO    │ stt            │ You: I can't reach Elant's studio, please make sure it's running.
+2026-02-21 07:23:07 │ INFO    │ main           │ User: I can't reach Elant's studio, please make sure it's running.
+2026-02-21 07:23:11 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:23:11 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:11 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:23:11 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:11 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:11 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:23:16 │ INFO    │ stt            │ You: I can't reach Ellen's studio. Please make sure it's running.
+2026-02-21 07:23:16 │ INFO    │ main           │ User: I can't reach Ellen's studio. Please make sure it's running.
+2026-02-21 07:23:20 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:23:20 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:20 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:23:20 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:20 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:20 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:23:25 │ INFO    │ stt            │ You: I can't reach a lent studio, please make sure it's running.
+2026-02-21 07:23:25 │ INFO    │ main           │ User: I can't reach a lent studio, please make sure it's running.
+2026-02-21 07:23:30 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:23:30 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:30 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:23:30 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:30 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:30 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:23:35 │ INFO    │ stt            │ You: I can't reach L.N. Studio, please make sure it's running.
+2026-02-21 07:23:35 │ INFO    │ main           │ User: I can't reach L.N. Studio, please make sure it's running.
+2026-02-21 07:23:39 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:23:39 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:39 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:23:39 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:39 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:39 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:23:45 │ INFO    │ stt            │ You: I can't reach LM Studio, please make sure it's running.
+2026-02-21 07:23:45 │ INFO    │ main           │ User: I can't reach LM Studio, please make sure it's running.
+2026-02-21 07:23:49 │ ERROR   │ llm            │ Cannot connect to LM Studio at http://localhost:1234/v1/chat/completions
+2026-02-21 07:23:49 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:49 │ DEBUG   │ main           │ LLM response: I can't reach LM Studio. Please make sure it's running.
+2026-02-21 07:23:49 │ DEBUG   │ piper.voice    │ text=I can't reach LM Studio. Please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', '.'], ['p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:49 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:49 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:23:54 │ INFO    │ stt            │ You: I can't reach Ellen's studio, please make sure it's running.
+2026-02-21 07:23:54 │ INFO    │ main           │ User: I can't reach Ellen's studio, please make sure it's running.
+2026-02-21 07:23:59 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:23:59 │ DEBUG   │ main           │ LLM response: I can't reach Ellen's studio, please make sure it's running.
+2026-02-21 07:23:59 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:23:59 │ DEBUG   │ piper.voice    │ text=I can't reach Ellen's studio, please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˈ', 'ɛ', 'l', 'ə', 'n', 'z', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', ',', ' ', 'p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:23:59 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:24:04 │ INFO    │ stt            │ You: I can't reach Elett's studio, please make sure it's running.
+2026-02-21 07:24:04 │ INFO    │ main           │ User: I can't reach Elett's studio, please make sure it's running.
+2026-02-21 07:24:07 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:24:07 │ DEBUG   │ main           │ LLM response: I can't reach Elett's studio, please make sure it's running.
+2026-02-21 07:24:07 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:24:07 │ DEBUG   │ piper.voice    │ text=I can't reach Elett's studio, please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ᵻ', 'l', 'ˈ', 'ɛ', 't', 's', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', ',', ' ', 'p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:24:07 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:24:13 │ INFO    │ stt            │ You: I can't reach a let's studio. Please make sure it's running.
+2026-02-21 07:24:13 │ INFO    │ main           │ User: I can't reach a let's studio. Please make sure it's running.
+2026-02-21 07:24:16 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:24:16 │ DEBUG   │ main           │ LLM response: I can't reach Ellen's studio, please make sure it's running.
+2026-02-21 07:24:16 │ DEBUG   │ piper.voice    │ text=I can't reach Ellen's studio, please make sure it's running., phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ˈ', 'i', 'ː', 't', 'ʃ', ' ', 'ˈ', 'ɛ', 'l', 'ə', 'n', 'z', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', ',', ' ', 'p', 'l', 'ˈ', 'i', 'ː', 'z', ' ', 'm', 'ˌ', 'e', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'ʊ', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 'ɹ', 'ˈ', 'ʌ', 'n', 'ɪ', 'ŋ', '.']]
+2026-02-21 07:24:16 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:24:16 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:24:19 │ INFO    │ stt            │ You: Okay
+2026-02-21 07:24:19 │ INFO    │ main           │ User: Okay
+2026-02-21 07:24:22 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:24:22 │ DEBUG   │ main           │ LLM response: Okay
+2026-02-21 07:24:22 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:24:22 │ DEBUG   │ piper.voice    │ text=Okay, phonemes=[['o', 'ʊ', 'k', 'ˈ', 'e', 'ɪ']]
+2026-02-21 07:24:22 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:24:32 │ INFO    │ stt            │ You: Hey, what's up, what's going on?
+2026-02-21 07:24:32 │ INFO    │ main           │ User: Hey, what's up, what's going on?
+2026-02-21 07:24:35 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:24:35 │ DEBUG   │ main           │ LLM response: Hey, what's up, what's going on?
+2026-02-21 07:24:35 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:24:35 │ DEBUG   │ piper.voice    │ text=Hey, what's up, what's going on?, phonemes=[['h', 'ˈ', 'e', 'ɪ', ',', ' ', 'w', 'ˌ', 'ʌ', 't', 's', ' ', 'ˈ', 'ʌ', 'p', ',', ' ', 'w', 'ˌ', 'ʌ', 't', 's', ' ', 'ɡ', 'ˌ', 'o', 'ʊ', 'ɪ', 'ŋ', ' ', 'ˈ', 'ɔ', 'n', '?']]
+2026-02-21 07:24:35 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:24:40 │ INFO    │ stt            │ You: Hey, what's up? What's going on?
+2026-02-21 07:24:40 │ INFO    │ main           │ User: Hey, what's up? What's going on?
+2026-02-21 07:24:43 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:24:43 │ DEBUG   │ main           │ LLM response: Hey, what's up? What's going on?
+2026-02-21 07:24:43 │ DEBUG   │ piper.voice    │ text=Hey, what's up? What's going on?, phonemes=[['h', 'ˈ', 'e', 'ɪ', ',', ' ', 'w', 'ˌ', 'ʌ', 't', 's', ' ', 'ˈ', 'ʌ', 'p', '?'], ['w', 'ˌ', 'ʌ', 't', 's', ' ', 'ɡ', 'ˌ', 'o', 'ʊ', 'ɪ', 'ŋ', ' ', 'ˈ', 'ɔ', 'n', '?']]
+2026-02-21 07:24:43 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:24:43 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:24:52 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-21 07:24:54 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-21 07:24:54 │ INFO    │ main           │ ==================================================
+2026-02-21 07:24:54 │ INFO    │ main           │ LUMEN starting up
+2026-02-21 07:24:54 │ INFO    │ main           │ ==================================================
+2026-02-21 07:24:54 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-21 07:24:54 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-21 07:24:54 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-21 07:24:54 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-21 07:24:54 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-21 07:24:54 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:24:54 │ INFO    │ audio          │ Initializing shared PyAudio (PortAudio).
+2026-02-21 07:24:55 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:25:12 │ INFO    │ stt            │ You: Lumenwikop
+2026-02-21 07:25:12 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:25:12 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:25:19 │ INFO    │ stt            │ You: Lumen Wake Up
+2026-02-21 07:25:19 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 07:25:19 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:25:19 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:25:19 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-21 07:25:19 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-21 07:25:21 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-21 07:25:21 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 07:25:30 │ INFO    │ stt            │ You: Open what's up.
+2026-02-21 07:25:30 │ INFO    │ main           │ User: Open what's up.
+2026-02-21 07:25:33 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'WhatsApp'}
+2026-02-21 07:25:33 │ DEBUG   │ main           │ LLM response: Opening WhatsApp.
+2026-02-21 07:25:33 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:25:33 │ DEBUG   │ piper.voice    │ text=Opening WhatsApp., phonemes=[['ˈ', 'o', 'ʊ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 'w', 'ʌ', 't', 's', ' ', 'ˈ', 'æ', 'p', '.']]
+2026-02-21 07:25:33 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:25:52 │ INFO    │ stt            │ You: Open Discord
+2026-02-21 07:25:52 │ INFO    │ main           │ User: Open Discord
+2026-02-21 07:25:55 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'Discord'}
+2026-02-21 07:25:55 │ DEBUG   │ main           │ LLM response: Opening Discord.
+2026-02-21 07:25:55 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:25:55 │ DEBUG   │ piper.voice    │ text=Opening Discord., phonemes=[['ˈ', 'o', 'ʊ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 'd', 'ˈ', 'ɪ', 's', 'k', 'ɔ', 'ː', 'ɹ', 'd', '.']]
+2026-02-21 07:25:55 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:26:09 │ INFO    │ stt            │ You: Open Steam and open Counter-Strike 2.
+2026-02-21 07:26:09 │ INFO    │ main           │ User: Open Steam and open Counter-Strike 2.
+2026-02-21 07:26:13 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'Counter-Strike 2'}
+2026-02-21 07:26:13 │ DEBUG   │ main           │ LLM response: Opening Steam and opening Counter-Strike 2.
+2026-02-21 07:26:13 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:26:13 │ DEBUG   │ piper.voice    │ text=Opening Steam and opening Counter-Strike 2., phonemes=[['ˈ', 'o', 'ʊ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 's', 't', 'ˈ', 'i', 'ː', 'm', ' ', 'æ', 'n', 'd', ' ', 'ˈ', 'o', 'ʊ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 'k', 'ˈ', 'a', 'ʊ', 'n', 't', 'ɚ', 's', 't', 'ɹ', 'ˈ', 'a', 'ɪ', 'k', ' ', 't', 'ˈ', 'u', 'ː', '.']]
+2026-02-21 07:26:13 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:26:28 │ DEBUG   │ stt            │ Filtered hallucination: 'You'
+2026-02-21 07:26:28 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:26:28 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:26:34 │ INFO    │ stt            │ You: Open Steam and download any game from my library.
+2026-02-21 07:26:34 │ INFO    │ main           │ User: Open Steam and download any game from my library.
+2026-02-21 07:26:38 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'Steam'}
+2026-02-21 07:26:38 │ DEBUG   │ main           │ LLM response: Open Steam and download any game from your library.
+2026-02-21 07:26:38 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:26:38 │ DEBUG   │ piper.voice    │ text=Open Steam and download any game from your library., phonemes=[['ˈ', 'o', 'ʊ', 'p', 'ə', 'n', ' ', 's', 't', 'ˈ', 'i', 'ː', 'm', ' ', 'æ', 'n', 'd', ' ', 'd', 'ˈ', 'a', 'ʊ', 'n', 'l', 'o', 'ʊ', 'd', ' ', 'ˌ', 'ɛ', 'n', 'i', ' ', 'ɡ', 'ˈ', 'e', 'ɪ', 'm', ' ', 'f', 'ɹ', 'ʌ', 'm', ' ', 'j', 'ʊ', 'ɹ', ' ', 'l', 'ˈ', 'a', 'ɪ', 'b', 'ɹ', 'ɛ', 'ɹ', 'i', '.']]
+2026-02-21 07:26:38 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:34:56 │ DEBUG   │ stt            │ Filtered hallucination: 'You You You You You You You You You You You You You You You You You You You You You You You You'
+2026-02-21 07:34:56 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:34:56 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:35:07 │ INFO    │ stt            │ You: Hey. Hey.
+2026-02-21 07:35:07 │ INFO    │ main           │ Sleep timeout reached.
+2026-02-21 07:35:07 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:35:07 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:35:17 │ INFO    │ stt            │ You: Lümenwikov.
+2026-02-21 07:35:17 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:35:17 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:35:33 │ INFO    │ stt            │ You: Lumen Wake Up
+2026-02-21 07:35:33 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 07:35:33 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:35:33 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 07:35:33 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:35:38 │ INFO    │ stt            │ You: I'm awake. How can I help you, Chart?
+2026-02-21 07:35:38 │ INFO    │ main           │ User: I'm awake. How can I help you, Chart?
+2026-02-21 07:35:42 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:35:42 │ DEBUG   │ main           │ LLM response: You're awake now. What time is it?
+2026-02-21 07:35:42 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:35:42 │ DEBUG   │ piper.voice    │ text=You're awake now. What time is it?, phonemes=[['j', 'ʊ', 'ɹ', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', ' ', 'n', 'ˈ', 'a', 'ʊ', '.'], ['w', 'ˌ', 'ʌ', 't', ' ', 't', 'ˈ', 'a', 'ɪ', 'm', ' ', 'ɪ', 'z', ' ', 'ɪ', 't', '?']]
+2026-02-21 07:35:42 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:35:47 │ INFO    │ stt            │ You: Your week now. What time is it?
+2026-02-21 07:35:47 │ INFO    │ main           │ User: Your week now. What time is it?
+2026-02-21 07:35:50 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:35:50 │ DEBUG   │ main           │ LLM response: Your week begins now. What time is it?
+2026-02-21 07:35:50 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:35:50 │ DEBUG   │ piper.voice    │ text=Your week begins now. What time is it?, phonemes=[['j', 'ʊ', 'ɹ', ' ', 'w', 'ˈ', 'i', 'ː', 'k', ' ', 'b', 'ɪ', 'ɡ', 'ˈ', 'ɪ', 'n', 'z', ' ', 'n', 'ˈ', 'a', 'ʊ', '.'], ['w', 'ˌ', 'ʌ', 't', ' ', 't', 'ˈ', 'a', 'ɪ', 'm', ' ', 'ɪ', 'z', ' ', 'ɪ', 't', '?']]
+2026-02-21 07:35:50 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:35:59 │ INFO    │ stt            │ You: What do you think about Donald Trump?
+2026-02-21 07:35:59 │ INFO    │ main           │ User: What do you think about Donald Trump?
+2026-02-21 07:36:02 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:36:02 │ DEBUG   │ main           │ LLM response: Your question about Donald Trump.
+2026-02-21 07:36:02 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:36:02 │ DEBUG   │ piper.voice    │ text=Your question about Donald Trump., phonemes=[['j', 'ʊ', 'ɹ', ' ', 'k', 'w', 'ˈ', 'ɛ', 's', 't', 'ʃ', 'ə', 'n', ' ', 'ɐ', 'b', 'ˌ', 'a', 'ʊ', 't', ' ', 'd', 'ˈ', 'ɑ', 'ː', 'n', 'ə', 'l', 'd', ' ', 't', 'ɹ', 'ˈ', 'ʌ', 'm', 'p', '.']]
+2026-02-21 07:36:02 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:36:12 │ INFO    │ stt            │ You: Uh-huh, yeah, so what do you think about him?
+2026-02-21 07:36:12 │ INFO    │ main           │ User: Uh-huh, yeah, so what do you think about him?
+2026-02-21 07:36:16 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:36:16 │ DEBUG   │ main           │ LLM response: Based on the recent news and his political career, I believe he is a significant figure in American politics.
+2026-02-21 07:36:16 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:36:16 │ DEBUG   │ piper.voice    │ text=Based on the recent news and his political career, I believe he is a significant figure in American politics., phonemes=[['b', 'ˈ', 'e', 'ɪ', 's', 't', ' ', 'ɔ', 'n', 'ð', 'ə', ' ', 'ɹ', 'ˈ', 'i', 'ː', 's', 'ə', 'n', 't', ' ', 'n', 'ˈ', 'u', 'ː', 'z', ' ', 'æ', 'n', 'd', ' ', 'h', 'ɪ', 'z', ' ', 'p', 'ə', 'l', 'ˈ', 'ɪ', 'ɾ', 'ɪ', 'k', 'ə', 'l', ' ', 'k', 'ɚ', 'ɹ', 'ˈ', 'ɪ', 'ɹ', ',', ' ', 'a', 'ɪ', ' ', 'b', 'ᵻ', 'l', 'ˈ', 'i', 'ː', 'v', ' ', 'h', 'i', 'ː', 'ʲ', ' ', 'ɪ', 'z', ' ', 'ɐ', ' ', 's', 'ɪ', 'ɡ', 'n', 'ˈ', 'ɪ', 'f', 'ɪ', 'k', 'ə', 'n', 't', ' ', 'f', 'ˈ', 'ɪ', 'ɡ', 'j', 'ɚ', 'ɹ', ' ', 'ɪ', 'n', ' ', 'ɐ', 'm', 'ˈ', 'ɛ', 'ɹ', 'ɪ', 'k', 'ə', 'n', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'l', 'ə', 't', 'ˌ', 'ɪ', 'k', 's', '.']]
+2026-02-21 07:36:16 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:36:31 │ INFO    │ stt            │ You: Yeah, but I need your opinion though. What's your opinion about him?
+2026-02-21 07:36:31 │ INFO    │ main           │ User: Yeah, but I need your opinion though. What's your opinion about him?
+2026-02-21 07:36:34 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:36:34 │ DEBUG   │ main           │ LLM response: Based on the recent news and his political career, I believe he is a significant figure in American politics.
+2026-02-21 07:36:34 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:36:34 │ DEBUG   │ piper.voice    │ text=Based on the recent news and his political career, I believe he is a significant figure in American politics., phonemes=[['b', 'ˈ', 'e', 'ɪ', 's', 't', ' ', 'ɔ', 'n', 'ð', 'ə', ' ', 'ɹ', 'ˈ', 'i', 'ː', 's', 'ə', 'n', 't', ' ', 'n', 'ˈ', 'u', 'ː', 'z', ' ', 'æ', 'n', 'd', ' ', 'h', 'ɪ', 'z', ' ', 'p', 'ə', 'l', 'ˈ', 'ɪ', 'ɾ', 'ɪ', 'k', 'ə', 'l', ' ', 'k', 'ɚ', 'ɹ', 'ˈ', 'ɪ', 'ɹ', ',', ' ', 'a', 'ɪ', ' ', 'b', 'ᵻ', 'l', 'ˈ', 'i', 'ː', 'v', ' ', 'h', 'i', 'ː', 'ʲ', ' ', 'ɪ', 'z', ' ', 'ɐ', ' ', 's', 'ɪ', 'ɡ', 'n', 'ˈ', 'ɪ', 'f', 'ɪ', 'k', 'ə', 'n', 't', ' ', 'f', 'ˈ', 'ɪ', 'ɡ', 'j', 'ɚ', 'ɹ', ' ', 'ɪ', 'n', ' ', 'ɐ', 'm', 'ˈ', 'ɛ', 'ɹ', 'ɪ', 'k', 'ə', 'n', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'l', 'ə', 't', 'ˌ', 'ɪ', 'k', 's', '.']]
+2026-02-21 07:36:34 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:37:18 │ INFO    │ stt            │ You: You Okay now tell me what you can do like your abilities what else can you do
+2026-02-21 07:37:18 │ INFO    │ main           │ User: You Okay now tell me what you can do like your abilities what else can you do
+2026-02-21 07:37:26 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:37:26 │ DEBUG   │ main           │ LLM response: I can help you search for information, check the weather, open apps, send messages, and chat about topics. Let me know what you need!
+2026-02-21 07:37:26 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:37:26 │ DEBUG   │ piper.voice    │ text=I can help you search for information, check the weather, open apps, send messages, and chat about topics. Let me know what you need!, phonemes=[['a', 'ɪ', ' ', 'k', 'æ', 'n', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ' ', 's', 'ˈ', 'ɜ', 'ː', 't', 'ʃ', ' ', 'f', 'ɔ', 'ː', 'ɹ', ' ', 'ˌ', 'ɪ', 'n', 'f', 'ɚ', 'm', 'ˈ', 'e', 'ɪ', 'ʃ', 'ə', 'n', ',', ' ', 't', 'ʃ', 'ˈ', 'ɛ', 'k', ' ', 'ð', 'ə', ' ', 'w', 'ˈ', 'ɛ', 'ð', 'ɚ', ',', ' ', 'ˈ', 'o', 'ʊ', 'p', 'ə', 'n', ' ', 'ˈ', 'æ', 'p', 's', ',', ' ', 's', 'ˈ', 'ɛ', 'n', 'd', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', 'ᵻ', 'z', ',', ' ', 'æ', 'n', 'd', ' ', 't', 'ʃ', 'ˈ', 'æ', 't', ' ', 'ɐ', 'b', 'ˌ', 'a', 'ʊ', 't', ' ', 't', 'ˈ', 'ɑ', 'ː', 'p', 'ɪ', 'k', 's', '.'], ['l', 'ˈ', 'ɛ', 't', ' ', 'm', 'ˌ', 'i', 'ː', ' ', 'n', 'ˈ', 'o', 'ʊ', ' ', 'w', 'ʌ', 't', ' ', 'j', 'u', 'ː', ' ', 'n', 'ˈ', 'i', 'ː', 'd', '!']]
+2026-02-21 07:37:26 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:37:39 │ INFO    │ stt            │ You: Okay, I want to send a message.
+2026-02-21 07:37:39 │ INFO    │ main           │ User: Okay, I want to send a message.
+2026-02-21 07:37:48 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'Chart', 'message_text': 'Hi Chart, how are you doing?', 'platform': 'WhatsApp'}
+2026-02-21 07:37:48 │ DEBUG   │ main           │ LLM response: I'll send a message to Chart. How is he doing?
+2026-02-21 07:37:48 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:37:48 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:37:51 │ DEBUG   │ piper.voice    │ text=Sir, message sent to Chart via WhatsApp., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'w', 'ʌ', 't', 's', ' ', 'ˈ', 'æ', 'p', '.']]
+2026-02-21 07:38:03 │ DEBUG   │ stt            │ Filtered hallucination: 'You'
+2026-02-21 07:38:03 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:38:03 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:38:15 │ INFO    │ stt            │ You: Send a message to contact me, contact and send hi.
+2026-02-21 07:38:15 │ INFO    │ main           │ User: Send a message to contact me, contact and send hi.
+2026-02-21 07:38:22 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'contact', 'message_text': 'hi', 'platform': 'WhatsApp'}
+2026-02-21 07:38:22 │ DEBUG   │ main           │ LLM response: Message sent to contact with 'hi'.
+2026-02-21 07:38:22 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:38:22 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:38:25 │ DEBUG   │ piper.voice    │ text=Sir, message sent to contact via WhatsApp., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 'k', 'ˈ', 'ɑ', 'ː', 'n', 't', 'æ', 'k', 't', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'w', 'ʌ', 't', 's', ' ', 'ˈ', 'æ', 'p', '.']]
+2026-02-21 07:39:01 │ INFO    │ stt            │ You: Saying, Hi, this is an automated response from an AI, do not mind this number, thank you.
+2026-02-21 07:39:01 │ INFO    │ main           │ User: Saying, Hi, this is an automated response from an AI, do not mind this number, thank you.
+2026-02-21 07:39:07 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:39:07 │ DEBUG   │ main           │ LLM response: Thank you for the message. Have a great day, Chart!
+2026-02-21 07:39:07 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:39:07 │ DEBUG   │ piper.voice    │ text=Thank you for the message. Have a great day, Chart!, phonemes=[['θ', 'ˈ', 'æ', 'ŋ', 'k', ' ', 'j', 'u', 'ː', ' ', 'f', 'ɚ', 'ð', 'ə', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', '.'], ['h', 'æ', 'v', ' ', 'ɐ', ' ', 'ɡ', 'ɹ', 'ˈ', 'e', 'ɪ', 't', ' ', 'd', 'ˈ', 'e', 'ɪ', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '!']]
+2026-02-21 07:39:07 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:39:28 │ INFO    │ stt            │ You: No, no, no, I said send a message to PayPal saying, hi, this is an automated message response from an AI. Tonight, mind this number. Thank you.
+2026-02-21 07:39:28 │ INFO    │ main           │ User: No, no, no, I said send a message to PayPal saying, hi, this is an automated message response from an AI. Tonight, mind this number. Thank you.
+2026-02-21 07:39:38 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'PayPal', 'message_text': 'Hi, this is an automated message response from an AI. Tonight, mind this number. Thank you.', 'platform': 'WhatsApp'}
+2026-02-21 07:39:38 │ DEBUG   │ main           │ LLM response: Message sent to PayPal as requested.
+2026-02-21 07:39:38 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:39:38 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:39:41 │ DEBUG   │ piper.voice    │ text=Sir, message sent to PayPal via WhatsApp., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 'p', 'ˈ', 'e', 'ɪ', ' ', 'p', 'ˈ', 'æ', 'l', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'w', 'ʌ', 't', 's', ' ', 'ˈ', 'æ', 'p', '.']]
+2026-02-21 07:42:30 │ DEBUG   │ stt            │ Filtered hallucination: 'You You You You You You'
+2026-02-21 07:42:30 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:42:30 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:42:47 │ INFO    │ stt            │ You: Hey, Lumen, I want you to restart my computer, thank you.
+2026-02-21 07:42:47 │ INFO    │ main           │ Sleep timeout reached.
+2026-02-21 07:42:47 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:42:47 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:42:54 │ INFO    │ stt            │ You: Lumen wake up.
+2026-02-21 07:42:54 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 07:42:54 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:42:54 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 07:42:54 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:43:03 │ INFO    │ stt            │ You: Lumen, I want you to restart my computer right now.
+2026-02-21 07:43:03 │ INFO    │ main           │ User: Lumen, I want you to restart my computer right now.
+2026-02-21 07:43:11 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'restart computer'}
+2026-02-21 07:43:11 │ DEBUG   │ main           │ LLM response: I can't restart your computer directly. Would you like me to guide you through the steps or assist with something else?
+2026-02-21 07:43:11 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:43:11 │ DEBUG   │ piper.voice    │ text=I can't restart your computer directly. Would you like me to guide you through the steps or assist with something else?, phonemes=[['a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ɹ', 'ᵻ', 's', 't', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', ' ', 'j', 'ʊ', 'ɹ', ' ', 'k', 'ə', 'm', 'p', 'j', 'ˈ', 'u', 'ː', 'ɾ', 'ɚ', ' ', 'd', 'ᵻ', 'ɹ', 'ˈ', 'ɛ', 'k', 't', 'l', 'i', '.'], ['w', 'ʊ', 'd', ' ', 'j', 'u', 'ː', ' ', 'l', 'ˈ', 'a', 'ɪ', 'k', ' ', 'm', 'ˌ', 'i', 'ː', ' ', 't', 'ə', ' ', 'ɡ', 'ˈ', 'a', 'ɪ', 'd', ' ', 'j', 'u', 'ː', ' ', 'θ', 'ɹ', 'u', 'ː', ' ', 'ð', 'ə', ' ', 's', 't', 'ˈ', 'ɛ', 'p', 's', ' ', 'ɔ', 'ː', 'ɹ', ' ', 'ɐ', 's', 'ˈ', 'ɪ', 's', 't', ' ', 'w', 'ɪ', 'ð', ' ', 's', 'ˈ', 'ʌ', 'm', 'θ', 'ɪ', 'ŋ', ' ', 'ˈ', 'ɛ', 'l', 's', '?']]
+2026-02-21 07:43:11 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:44:08 │ INFO    │ stt            │ You: You You What's the weather today
+2026-02-21 07:44:08 │ INFO    │ main           │ User: You You What's the weather today
+2026-02-21 07:44:15 │ INFO    │ main           │ LLM → intent=weather_report, params={'city': 'Davao City'}
+2026-02-21 07:44:15 │ DEBUG   │ main           │ LLM response: I'll check the weather for Davao City for you.
+2026-02-21 07:44:15 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:44:15 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:44:18 │ DEBUG   │ piper.voice    │ text=Weather in Davao City: 24.3°C, overcast, humidity 89%, wind 9.9 km/h., phonemes=[['w', 'ˈ', 'ɛ', 'ð', 'ɚ', 'ɹ', ' ', 'ɪ', 'n', ' ', 'd', 'ˈ', 'æ', 'v', 'a', 'ʊ', ' ', 's', 'ˈ', 'ɪ', 'ɾ', 'i', ':', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', ' ', 'p', 'ɔ', 'ɪ', 'n', 't', ' ', 'θ', 'ɹ', 'ˈ', 'i', 'ː', ' ', 'd', 'ᵻ', 'ɡ', 'ɹ', 'ˈ', 'i', 'ː', 'z', ' ', 's', 'ˈ', 'i', 'ː', ',', ' ', 'ˌ', 'o', 'ʊ', 'v', 'ɚ', 'k', 'ˈ', 'æ', 's', 't', ',', ' ', 'h', 'j', 'u', 'ː', 'm', 'ˈ', 'ɪ', 'd', 'ᵻ', 'ɾ', 'i', 'ʲ', ' ', 'ˈ', 'e', 'ɪ', 'ɾ', 'i', ' ', 'n', 'ˈ', 'a', 'ɪ', 'n', ' ', 'p', 'ɚ', 's', 'ˈ', 'ɛ', 'n', 't', ',', ' ', 'w', 'ˈ', 'ɪ', 'n', 'd', ' ', 'n', 'ˈ', 'a', 'ɪ', 'n', ' ', 'p', 'ɔ', 'ɪ', 'n', 't', ' ', 'n', 'ˈ', 'a', 'ɪ', 'n', ' ', 'k', 'ˌ', 'e', 'ɪ', 'ˈ', 'ɛ', 'm', ' ', 's', 'l', 'ˈ', 'æ', 'ʃ', ' ', 'ˈ', 'e', 'ɪ', 't', 'ʃ', '.']]
+2026-02-21 07:44:44 │ INFO    │ stt            │ You: Okay, what are the intents that are embedded into you? I wish to know which actions can you do.
+2026-02-21 07:44:44 │ INFO    │ main           │ User: Okay, what are the intents that are embedded into you? I wish to know which actions can you do.
+2026-02-21 07:44:52 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:44:52 │ DEBUG   │ main           │ LLM response: I can assist with conversations, search online, provide weather reports, open apps, and send messages. Let me know how I can help!
+2026-02-21 07:44:52 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:44:52 │ DEBUG   │ piper.voice    │ text=I can assist with conversations, search online, provide weather reports, open apps, and send messages. Let me know how I can help!, phonemes=[['a', 'ɪ', ' ', 'k', 'æ', 'n', ' ', 'ɐ', 's', 'ˈ', 'ɪ', 's', 't', ' ', 'w', 'ɪ', 'ð', ' ', 'k', 'ɑ', 'ː', 'n', 'v', 'ɚ', 's', 'ˈ', 'e', 'ɪ', 'ʃ', 'ə', 'n', 'z', ',', ' ', 's', 'ˈ', 'ɜ', 'ː', 't', 'ʃ', ' ', 'ˈ', 'ɑ', 'ː', 'n', 'l', 'a', 'ɪ', 'n', ',', ' ', 'p', 'ɹ', 'ə', 'v', 'ˈ', 'a', 'ɪ', 'd', ' ', 'w', 'ˈ', 'ɛ', 'ð', 'ɚ', ' ', 'ɹ', 'ᵻ', 'p', 'ˈ', 'ɔ', 'ː', 'ɹ', 't', 's', ',', ' ', 'ˈ', 'o', 'ʊ', 'p', 'ə', 'n', ' ', 'ˈ', 'æ', 'p', 's', ',', ' ', 'æ', 'n', 'd', ' ', 's', 'ˈ', 'ɛ', 'n', 'd', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', 'ᵻ', 'z', '.'], ['l', 'ˈ', 'ɛ', 't', ' ', 'm', 'ˌ', 'i', 'ː', ' ', 'n', 'ˈ', 'o', 'ʊ', ' ', 'h', 'ˌ', 'a', 'ʊ', ' ', 'a', 'ɪ', ' ', 'k', 'æ', 'n', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', '!']]
+2026-02-21 07:44:52 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:45:10 │ INFO    │ stt            │ You: Okay, I want to buy the new Nike shoes. Help me with that.
+2026-02-21 07:45:10 │ INFO    │ main           │ User: Okay, I want to buy the new Nike shoes. Help me with that.
+2026-02-21 07:45:19 │ INFO    │ main           │ LLM → intent=search, params={'query': 'new Nike shoes available for purchase'}
+2026-02-21 07:45:19 │ DEBUG   │ main           │ LLM response: I'll search for the latest Nike shoes available for purchase.
+2026-02-21 07:45:19 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:45:19 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:45:20 │ DEBUG   │ rquest.connect │ starting new connection: https://en.wikipedia.org/
+2026-02-21 07:45:20 │ DEBUG   │ rquest.connect │ starting new connection: https://grokipedia.com/
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.connect.dns │ resolving en.wikipedia.org
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.connect.dns │ resolving grokipedia.com
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2001:df2:e500:ed1a::1]:443
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2606:4700:20::ac43:491f]:443
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2001:df2:e500:ed1a::1]:443
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2606:4700:20::ac43:491f]:443
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://grokipedia.com/, alpn_protos: None, network: default }
+2026-02-21 07:45:20 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2026-02-21 07:45:20 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access'
+2026-02-21 07:45:20 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access-Global'
+2026-02-21 07:45:20 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'GeoIP'
+2026-02-21 07:45:20 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'NetworkProbeLimit'
+2026-02-21 07:45:20 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Uniq'
+2026-02-21 07:45:20 │ INFO    │ primp          │ response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20Nike%20shoes%20available%20for%20purchase 200
+2026-02-21 07:45:21 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'grokipedia-affinity'
+2026-02-21 07:45:21 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__cf_bm'
+2026-02-21 07:45:21 │ INFO    │ primp          │ response: https://grokipedia.com/api/typeahead?query=new+Nike+shoes+available+for+purchase&limit=1 200
+2026-02-21 07:45:21 │ DEBUG   │ rquest.connect │ starting new connection: https://search.yahoo.com/
+2026-02-21 07:45:21 │ DEBUG   │ rquest.util.client.connect.dns │ resolving search.yahoo.com
+2026-02-21 07:45:21 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2406:2000:e4:1404::3000]:443
+2026-02-21 07:45:21 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2406:2000:e4:1404::3000]:443
+2026-02-21 07:45:21 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://search.yahoo.com/, alpn_protos: None, network: default }
+2026-02-21 07:45:22 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'lkl'
+2026-02-21 07:45:22 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A1'
+2026-02-21 07:45:22 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A3'
+2026-02-21 07:45:22 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A1S'
+2026-02-21 07:45:22 │ INFO    │ primp          │ response: https://search.yahoo.com/search;_ylt=_2BAbALJEaxSWPnFTfDzqCX2;_ylu=wabqzbLb0gXZc0fiZvN83CbKjG4amlxsg5nYsysW-wN4EaY?p=new+Nike+shoes+available+for+purchase 200
+2026-02-21 07:45:23 │ DEBUG   │ piper.voice    │ text=amazon.com has been visited by 1M+ users in the past month Find perfect mens shoes . Find Store Find Nike Shoes At Shoe Carnival Today! Shop Shoe Carnival To Save Big On The Hottest Brands!, phonemes=[['ˈ', 'æ', 'm', 'ɐ', 'z', 'ˌ', 'ɑ', 'ː', 'n', ' ', 'd', 'ˈ', 'ɑ', 'ː', 't', ' ', 'k', 'ˈ', 'ɑ', 'ː', 'm', ' ', 'h', 'ˈ', 'æ', 'z', 'b', 'i', 'ː', 'n', ' ', 'v', 'ˈ', 'ɪ', 'z', 'ɪ', 'ɾ', 'ᵻ', 'd', ' ', 'b', 'a', 'ɪ', ' ', 'w', 'ˈ', 'ʌ', 'n', ' ', 'ˈ', 'ɛ', 'm', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 'j', 'ˈ', 'u', 'ː', 'z', 'ɚ', 'z', ' ', 'ɪ', 'n', 'ð', 'ə', ' ', 'p', 'ˈ', 'æ', 's', 't', ' ', 'm', 'ˈ', 'ʌ', 'n', 'θ', ' ', 'f', 'ˈ', 'a', 'ɪ', 'n', 'd', ' ', 'p', 'ˈ', 'ɜ', 'ː', 'f', 'ɛ', 'k', 't', ' ', 'm', 'ˈ', 'ɛ', 'n', 'z', ' ', 'ʃ', 'ˈ', 'u', 'ː', 'z', '.'], ['f', 'ˈ', 'a', 'ɪ', 'n', 'd', ' ', 's', 't', 'ˈ', 'ɔ', 'ː', 'ɹ', ' ', 'f', 'ˈ', 'a', 'ɪ', 'n', 'd', ' ', 'n', 'ˈ', 'a', 'ɪ', 'k', ' ', 'ʃ', 'ˈ', 'u', 'ː', 'z', ' ', 'æ', 't', ' ', 'ʃ', 'ˈ', 'u', 'ː', ' ', 'k', 'ˈ', 'ɑ', 'ː', 'ɹ', 'n', 'ɪ', 'v', 'ə', 'l', ' ', 't', 'ə', 'd', 'ˈ', 'e', 'ɪ', '!'], ['ʃ', 'ˈ', 'ɑ', 'ː', 'p', ' ', 'ʃ', 'ˈ', 'u', 'ː', ' ', 'k', 'ˈ', 'ɑ', 'ː', 'ɹ', 'n', 'ɪ', 'v', 'ə', 'l', ' ', 't', 'ə', ' ', 's', 'ˈ', 'e', 'ɪ', 'v', ' ', 'b', 'ˈ', 'ɪ', 'ɡ', ' ', 'ɔ', 'n', 'ð', 'ə', ' ', 'h', 'ˈ', 'ɑ', 'ː', 'ɾ', 'ɪ', 's', 't', ' ', 'b', 'ɹ', 'ˈ', 'æ', 'n', 'd', 'z', '!']]
+2026-02-21 07:46:27 │ INFO    │ stt            │ You: You You I want to Make a new account for Facebook do that
+2026-02-21 07:46:27 │ INFO    │ main           │ User: You You I want to Make a new account for Facebook do that
+2026-02-21 07:46:35 │ INFO    │ main           │ LLM → intent=search, params={'query': 'how to create a new Facebook account'}
+2026-02-21 07:46:35 │ DEBUG   │ main           │ LLM response: I'll search for how to create a new Facebook account for you.
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:46:35 │ DEBUG   │ rquest.connect │ starting new connection: https://en.wikipedia.org/
+2026-02-21 07:46:35 │ DEBUG   │ rquest.connect │ starting new connection: https://grokipedia.com/
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.connect.dns │ resolving en.wikipedia.org
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.connect.dns │ resolving grokipedia.com
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2001:df2:e500:ed1a::1]:443
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2606:4700:20::ac43:491f]:443
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2606:4700:20::ac43:491f]:443
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2001:df2:e500:ed1a::1]:443
+2026-02-21 07:46:35 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://grokipedia.com/, alpn_protos: None, network: default }
+2026-02-21 07:46:35 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'grokipedia-affinity'
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__cf_bm'
+2026-02-21 07:46:36 │ INFO    │ primp          │ response: https://grokipedia.com/api/typeahead?query=how+to+create+a+new+Facebook+account&limit=1 200
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access'
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access-Global'
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'GeoIP'
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'NetworkProbeLimit'
+2026-02-21 07:46:36 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Uniq'
+2026-02-21 07:46:36 │ INFO    │ primp          │ response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=how%20to%20create%20a%20new%20Facebook%20account 200
+2026-02-21 07:46:36 │ DEBUG   │ rquest.connect │ starting new connection: https://yandex.com/
+2026-02-21 07:46:36 │ DEBUG   │ rquest.util.client.connect.dns │ resolving yandex.com
+2026-02-21 07:46:36 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2a02:6b8:a::a]:443
+2026-02-21 07:46:36 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2a02:6b8:a::a]:443
+2026-02-21 07:46:36 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://yandex.com/, alpn_protos: None, network: default }
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting Set-Cookie 'Cookie { cookie_string: Some("is_gdpr=0; Path=/; Domain=.yandex.com; Expires=Sun, 20 Feb 2028 23:46:34 GMT"), name: Indexed(0, 7), value: Indexed(8, 9), expires: Some(DateTime(2028-02-20 23:46:34.0 +00:00:00)), max_age: None, domain: Some(Indexed(26, 37)), path: Some(Indexed(16, 17)), secure: None, http_only: None, same_site: None, partitioned: None }'
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting Set-Cookie 'Cookie { cookie_string: Some("is_gdpr_b=CL3ocBCq9QIoAg==; Path=/; Domain=.yandex.com; Expires=Sun, 20 Feb 2028 23:46:34 GMT"), name: Indexed(0, 9), value: Indexed(10, 26), expires: Some(DateTime(2028-02-20 23:46:34.0 +00:00:00)), max_age: None, domain: Some(Indexed(43, 54)), path: Some(Indexed(33, 34)), secure: None, http_only: None, same_site: None, partitioned: None }'
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '_yasc'
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'i'
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'yandexuid'
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'yashr'
+2026-02-21 07:46:37 │ DEBUG   │ cookie_store.cookie_store │ inserting Set-Cookie 'Cookie { cookie_string: Some("bh=YNrk48wGaiHcytG2Abvxn6sE+taGzAjS0ZmQB/y5r/8H3/3PnA2mngI=; Path=/; Domain=.yandex.com; Expires=Sat, 27 Mar 2027 23:46:34 GMT"), name: Indexed(0, 2), value: Indexed(3, 59), expires: Some(DateTime(2027-03-27 23:46:34.0 +00:00:00)), max_age: None, domain: Some(Indexed(76, 87)), path: Some(Indexed(66, 67)), secure: None, http_only: None, same_site: None, partitioned: None }'
+2026-02-21 07:46:37 │ INFO    │ primp          │ response: https://yandex.com/search/site/?text=how+to+create+a+new+Facebook+account&web=1&searchid=1534455 200
+2026-02-21 07:46:37 │ DEBUG   │ piper.voice    │ text=Navigate to the Facebook home page on a Desktop or open up the Facebook app. Click Create new account → Get started. When prompted, enter your first name and last name as well as a valid email, birthdate, and strong password., phonemes=[['n', 'ˈ', 'æ', 'v', 'ɪ', 'ɡ', 'ˌ', 'e', 'ɪ', 't', ' ', 't', 'ə', ' ', 'ð', 'ə', ' ', 'f', 'ˈ', 'e', 'ɪ', 's', 'b', 'ʊ', 'k', ' ', 'h', 'ˈ', 'o', 'ʊ', 'm', ' ', 'p', 'ˈ', 'e', 'ɪ', 'd', 'ʒ', ' ', 'ˌ', 'ɔ', 'n', ' ', 'ɐ', ' ', 'd', 'ˈ', 'ɛ', 's', 'k', 't', 'ɑ', 'ː', 'p', ' ', 'ɔ', 'ː', 'ɹ', ' ', 'ˈ', 'o', 'ʊ', 'p', 'ə', 'n', ' ', 'ˌ', 'ʌ', 'p', ' ', 'ð', 'ə', ' ', 'f', 'ˈ', 'e', 'ɪ', 's', 'b', 'ʊ', 'k', ' ', 'ˈ', 'æ', 'p', '.'], ['k', 'l', 'ˈ', 'ɪ', 'k', ' ', 'k', 'ɹ', 'i', 'ː', 'ʲ', 'ˈ', 'e', 'ɪ', 't', ' ', 'n', 'ˈ', 'u', 'ː', ' ', 'ɐ', 'k', 'ˈ', 'a', 'ʊ', 'n', 't', ' ', 'ɹ', 'ˈ', 'a', 'ɪ', 't', ' ', 'ˈ', 'æ', 'ɹ', 'o', 'ʊ', ' ', 'ɡ', 'ɛ', 't', ' ', 's', 't', 'ˈ', 'ɑ', 'ː', 'ɹ', 'ɾ', 'ᵻ', 'd', '.'], ['w', 'ˌ', 'ɛ', 'n', ' ', 'p', 'ɹ', 'ˈ', 'ɑ', 'ː', 'm', 'p', 't', 'ᵻ', 'd', ',', ' ', 'ˈ', 'ɛ', 'n', 't', 'ɚ', ' ', 'j', 'ʊ', 'ɹ', ' ', 'f', 'ˈ', 'ɜ', 'ː', 's', 't', ' ', 'n', 'ˈ', 'e', 'ɪ', 'm', ' ', 'æ', 'n', 'd', ' ', 'l', 'ˈ', 'æ', 's', 't', ' ', 'n', 'ˈ', 'e', 'ɪ', 'm', ' ', 'æ', 'z', ' ', 'w', 'ˈ', 'ɛ', 'l', ' ', 'æ', 'z', ' ', 'ɐ', ' ', 'v', 'ˈ', 'æ', 'l', 'ɪ', 'd', ' ', 'ˈ', 'i', 'ː', 'm', 'e', 'ɪ', 'l', ',', ' ', 'b', 'ˈ', 'ɜ', 'ː', 'θ', 'd', 'e', 'ɪ', 't', ',', ' ', 'æ', 'n', 'd', ' ', 's', 't', 'ɹ', 'ˈ', 'ɔ', 'ŋ', ' ', 'p', 'ˈ', 'æ', 's', 'w', 'ɜ', 'ː', 'd', '.']]
+2026-02-21 07:47:53 │ INFO    │ stt            │ You: You You Okay, send a message on discord to a guy called ghostrain saying this is an automated response message from an AI do not mind this message. Thank you
+2026-02-21 07:47:53 │ INFO    │ main           │ User: You You Okay, send a message on discord to a guy called ghostrain saying this is an automated response message from an AI do not mind this message. Thank you
+2026-02-21 07:48:03 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'ghostrain', 'message_text': 'This is an automated response message from an AI. Do not mind this message. Thank you.', 'platform': 'Discord'}
+2026-02-21 07:48:03 │ DEBUG   │ main           │ LLM response: Message sent to ghostrain on Discord.
+2026-02-21 07:48:03 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:48:03 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:48:06 │ DEBUG   │ piper.voice    │ text=Sir, message sent to ghostrain via Discord., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 'ɡ', 'ˈ', 'o', 'ʊ', 's', 't', 'ɹ', 'e', 'ɪ', 'n', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'd', 'ˈ', 'ɪ', 's', 'k', 'ɔ', 'ː', 'ɹ', 'd', '.']]
+2026-02-21 07:48:14 │ INFO    │ stt            │ You: do it again
+2026-02-21 07:48:14 │ INFO    │ main           │ User: do it again
+2026-02-21 07:48:22 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'ghostrain', 'message_text': 'This is an automated response message from an AI. Do not mind this message. Thank you.', 'platform': 'WhatsApp'}
+2026-02-21 07:48:22 │ DEBUG   │ main           │ LLM response: Message sent to ghostrain on Discord.
+2026-02-21 07:48:22 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:48:22 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:48:25 │ DEBUG   │ piper.voice    │ text=Sir, message sent to ghostrain via WhatsApp., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 'ɡ', 'ˈ', 'o', 'ʊ', 's', 't', 'ɹ', 'e', 'ɪ', 'n', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'w', 'ʌ', 't', 's', ' ', 'ˈ', 'æ', 'p', '.']]
+2026-02-21 07:48:46 │ INFO    │ stt            │ You: No, not WhatsApp, I said Discord. Send the message to GhostRain at Discord. Saying this is an automated response from an AI. Do not mind this message. Thank you.
+2026-02-21 07:48:46 │ INFO    │ main           │ User: No, not WhatsApp, I said Discord. Send the message to GhostRain at Discord. Saying this is an automated response from an AI. Do not mind this message. Thank you.
+2026-02-21 07:48:55 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'GhostRain', 'message_text': 'This is an automated response from an AI. Do not mind this message. Thank you.', 'platform': 'Discord'}
+2026-02-21 07:48:55 │ DEBUG   │ main           │ LLM response: Message sent to GhostRain on Discord.
+2026-02-21 07:48:55 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:48:55 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:48:58 │ DEBUG   │ piper.voice    │ text=Sir, message sent to GhostRain via Discord., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 'ɡ', 'ˈ', 'o', 'ʊ', 's', 't', ' ', 'ɹ', 'ˈ', 'e', 'ɪ', 'n', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'd', 'ˈ', 'ɪ', 's', 'k', 'ɔ', 'ː', 'ɹ', 'd', '.']]
+2026-02-21 07:49:56 │ INFO    │ stt            │ You: You Send send a message to ghost rain at discord saying this is an automated response from an AI do not mind this message. Thank you.
+2026-02-21 07:49:56 │ INFO    │ main           │ User: You Send send a message to ghost rain at discord saying this is an automated response from an AI do not mind this message. Thank you.
+2026-02-21 07:50:06 │ INFO    │ main           │ LLM → intent=send_message, params={'receiver': 'GhostRain', 'message_text': 'This is an automated response from an AI. Do not mind this message. Thank you.', 'platform': 'Discord'}
+2026-02-21 07:50:06 │ DEBUG   │ main           │ LLM response: Message sent to GhostRain on Discord.
+2026-02-21 07:50:06 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:50:06 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:50:09 │ DEBUG   │ piper.voice    │ text=Sir, message sent to GhostRain via Discord., phonemes=[['s', 'ˌ', 'ɜ', 'ː', ',', ' ', 'm', 'ˈ', 'ɛ', 's', 'ɪ', 'd', 'ʒ', ' ', 's', 'ˈ', 'ɛ', 'n', 't', ' ', 't', 'ə', ' ', 'ɡ', 'ˈ', 'o', 'ʊ', 's', 't', ' ', 'ɹ', 'ˈ', 'e', 'ɪ', 'n', ' ', 'v', 'ˈ', 'a', 'ɪ', 'ə', ' ', 'd', 'ˈ', 'ɪ', 's', 'k', 'ɔ', 'ː', 'ɹ', 'd', '.']]
+2026-02-21 07:51:12 │ INFO    │ stt            │ You: You Tell me what do you think about Vladimir Putin? I need your opinion. I don't need to know who is who he is. I just need your opinion about him.
+2026-02-21 07:51:12 │ INFO    │ main           │ User: You Tell me what do you think about Vladimir Putin? I need your opinion. I don't need to know who is who he is. I just need your opinion about him.
+2026-02-21 07:51:18 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:51:18 │ DEBUG   │ main           │ LLM response: I cannot provide opinions on political figures. I am designed to assist with facts, tasks, and neutral information only.
+2026-02-21 07:51:18 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:51:18 │ DEBUG   │ piper.voice    │ text=I cannot provide opinions on political figures. I am designed to assist with facts, tasks, and neutral information only., phonemes=[['a', 'ɪ', ' ', 'k', 'æ', 'n', 'ˈ', 'ɑ', 'ː', 't', ' ', 'p', 'ɹ', 'ə', 'v', 'ˈ', 'a', 'ɪ', 'd', ' ', 'ə', 'p', 'ˈ', 'ɪ', 'n', 'i', 'ə', 'n', 'z', ' ', 'ˌ', 'ɔ', 'n', ' ', 'p', 'ə', 'l', 'ˈ', 'ɪ', 'ɾ', 'ɪ', 'k', 'ə', 'l', ' ', 'f', 'ˈ', 'ɪ', 'ɡ', 'j', 'ɚ', 'z', '.'], ['a', 'ɪ', 'ɐ', 'm', ' ', 'd', 'ɪ', 'z', 'ˈ', 'a', 'ɪ', 'n', 'd', ' ', 't', 'ʊ', ' ', 'ɐ', 's', 'ˈ', 'ɪ', 's', 't', ' ', 'w', 'ɪ', 'ð', ' ', 'f', 'ˈ', 'æ', 'k', 't', 's', ',', ' ', 't', 'ˈ', 'æ', 's', 'k', 's', ',', ' ', 'æ', 'n', 'd', ' ', 'n', 'ˈ', 'u', 'ː', 't', 'ɹ', 'ə', 'l', ' ', 'ˌ', 'ɪ', 'n', 'f', 'ɚ', 'm', 'ˈ', 'e', 'ɪ', 'ʃ', 'ə', 'n', ' ', 'ˈ', 'o', 'ʊ', 'n', 'l', 'i', '.']]
+2026-02-21 07:51:18 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:51:39 │ INFO    │ stt            │ You: Okay, what do you think about the movie Harry Potter?
+2026-02-21 07:51:39 │ INFO    │ main           │ User: Okay, what do you think about the movie Harry Potter?
+2026-02-21 07:51:47 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:51:47 │ DEBUG   │ main           │ LLM response: I don't have personal opinions, but the Harry Potter movie series is widely praised for its storytelling, magic, and emotional depth.
+2026-02-21 07:51:47 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:51:47 │ DEBUG   │ piper.voice    │ text=I don't have personal opinions, but the Harry Potter movie series is widely praised for its storytelling, magic, and emotional depth., phonemes=[['a', 'ɪ', ' ', 'd', 'ˈ', 'o', 'ʊ', 'n', 't', ' ', 'h', 'æ', 'v', ' ', 'p', 'ˈ', 'ɜ', 'ː', 's', 'ə', 'n', 'ə', 'l', ' ', 'ə', 'p', 'ˈ', 'ɪ', 'n', 'i', 'ə', 'n', 'z', ',', ' ', 'b', 'ˌ', 'ʌ', 't', ' ', 'ð', 'ə', ' ', 'h', 'ˈ', 'æ', 'ɹ', 'i', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'ɾ', 'ɚ', ' ', 'm', 'ˈ', 'u', 'ː', 'v', 'i', ' ', 's', 'ˈ', 'ɪ', 'ɹ', 'i', 'z', ' ', 'ɪ', 'z', ' ', 'w', 'ˈ', 'a', 'ɪ', 'd', 'l', 'i', ' ', 'p', 'ɹ', 'ˈ', 'e', 'ɪ', 'z', 'd', ' ', 'f', 'ɔ', 'ː', 'ɹ', ' ', 'ɪ', 't', 's', ' ', 's', 't', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ɪ', 't', 'ˌ', 'ɛ', 'l', 'ɪ', 'ŋ', ',', ' ', 'm', 'ˈ', 'æ', 'd', 'ʒ', 'ɪ', 'k', ',', ' ', 'æ', 'n', 'd', ' ', 'ɪ', 'm', 'ˈ', 'o', 'ʊ', 'ʃ', 'ə', 'n', 'ə', 'l', ' ', 'd', 'ˈ', 'ɛ', 'p', 'θ', '.']]
+2026-02-21 07:51:47 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:52:11 │ INFO    │ stt            │ You: Who do you think is the most famous celebrity in the world and why is that so?
+2026-02-21 07:52:11 │ INFO    │ main           │ User: Who do you think is the most famous celebrity in the world and why is that so?
+2026-02-21 07:52:19 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:52:19 │ DEBUG   │ main           │ LLM response: I don't have personal opinions or rankings, but globally, celebrities like Beyoncé, Cristiano Ronaldo, and Elon Musk often appear at the top due to their widespread influence, media presence, and cultural impact.
+2026-02-21 07:52:19 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:52:19 │ DEBUG   │ piper.voice    │ text=I don't have personal opinions or rankings, but globally, celebrities like Beyoncé, Cristiano Ronaldo, and Elon Musk often appear at the top due to their widespread influence, media presence, and cultural impact., phonemes=[['a', 'ɪ', ' ', 'd', 'ˈ', 'o', 'ʊ', 'n', 't', ' ', 'h', 'æ', 'v', ' ', 'p', 'ˈ', 'ɜ', 'ː', 's', 'ə', 'n', 'ə', 'l', ' ', 'ə', 'p', 'ˈ', 'ɪ', 'n', 'i', 'ə', 'n', 'z', ' ', 'ɔ', 'ː', 'ɹ', ' ', 'ɹ', 'ˈ', 'æ', 'ŋ', 'k', 'ɪ', 'ŋ', 'z', ',', ' ', 'b', 'ˌ', 'ʌ', 't', ' ', 'ɡ', 'l', 'ˈ', 'o', 'ʊ', 'b', 'ə', 'l', 'i', ',', ' ', 's', 'ə', 'l', 'ˈ', 'ɛ', 'b', 'ɹ', 'ᵻ', 'ɾ', 'i', 'z', ' ', 'l', 'ˈ', 'a', 'ɪ', 'k', ' ', 'b', 'ˌ', 'e', 'ɪ', 'ə', 'n', 's', 'ˈ', 'e', 'ɪ', ',', ' ', 'k', 'ɹ', 'ˌ', 'ɪ', 's', 't', 'ɪ', 'ʲ', 'ˈ', 'ɑ', 'ː', 'n', 'o', 'ʊ', ' ', 'ɹ', 'ɑ', 'ː', 'n', 'ˈ', 'æ', 'l', 'd', 'o', 'ʊ', ',', ' ', 'æ', 'n', 'd', ' ', 'ᵻ', 'l', 'ˈ', 'ɑ', 'ː', 'n', ' ', 'm', 'ˈ', 'ʌ', 's', 'k', ' ', 'ˈ', 'ɔ', 'f', 'ə', 'n', ' ', 'ɐ', 'p', 'ˈ', 'ɪ', 'ɹ', ' ', 'æ', 't', ' ', 'ð', 'ə', ' ', 't', 'ˈ', 'ɑ', 'ː', 'p', ' ', 'd', 'ˈ', 'u', 'ː', ' ', 't', 'ə', ' ', 'ð', 'ɛ', 'ɹ', ' ', 'w', 'ˈ', 'a', 'ɪ', 'd', 's', 'p', 'ɹ', 'ɛ', 'd', ' ', 'ˈ', 'ɪ', 'n', 'f', 'l', 'u', 'ː', 'ə', 'n', 's', ',', ' ', 'm', 'ˈ', 'i', 'ː', 'd', 'i', 'ː', 'ʲ', 'ə', ' ', 'p', 'ɹ', 'ˈ', 'ɛ', 'z', 'ə', 'n', 's', ',', ' ', 'æ', 'n', 'd', ' ', 'k', 'ˈ', 'ʌ', 'l', 't', 'ʃ', 'ɚ', 'ɹ', 'ə', 'l', ' ', 'ˈ', 'ɪ', 'm', 'p', 'æ', 'k', 't', '.']]
+2026-02-21 07:52:19 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:52:46 │ INFO    │ stt            │ You: Who made the song Jingle Bell Rock?
+2026-02-21 07:52:46 │ INFO    │ main           │ User: Who made the song Jingle Bell Rock?
+2026-02-21 07:52:56 │ WARNING │ llm            │ JSON parse error: Expecting ',' delimiter: line 7 column 80 (char 220) | Raw: {
+    "intent": "search",
+    "parameters": {
+        "query": "who made the song Jingle Bell Rock"
+    },
+    "needs_clarification": false,
+    "text": "The song 'Jingle Bell Rock' was originally wri
+2026-02-21 07:52:56 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:52:56 │ DEBUG   │ main           │ LLM response: {
+    "intent": "search",
+    "parameters": {
+        "query": "who made the song Jingle Bell Rock"
+    },
+    "needs_clarification": false,
+    "text": "The song 'Jingle Bell Rock' was originally written by Robert Lee "Bobby" Russell in 1957, though its origins are debated and it has been popularized by various artists over the years.",
+    "memory_update": null
+}
+2026-02-21 07:52:56 │ DEBUG   │ sanitizer      │ Sanitized: '{
+    "intent": "search",
+    "parameters": {
+        "query": "who made the son' → ' , , Bobby" Russell in 1957, though its origins are debated and it has been popu'
+2026-02-21 07:52:56 │ DEBUG   │ sanitizer      │ Sanitized: '{
+    "intent": "search",
+    "parameters": {
+        "query": "who made the son' → ' , , Bobby" Russell in 1957, though its origins are debated and it has been popu'
+2026-02-21 07:52:56 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:52:56 │ DEBUG   │ piper.voice    │ text= , , Bobby" Russell in 1957, though its origins are debated and it has been popularized by various artists over the years.", phonemes=[['b', 'ˈ', 'ɑ', 'ː', 'b', 'i', ' ', 'ɹ', 'ˈ', 'ʌ', 's', 'ə', 'l', ' ', 'ɪ', 'n', ' ', 'n', 'ˈ', 'a', 'ɪ', 'n', 't', 'i', 'ː', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'f', 'ˈ', 'ɪ', 'f', 't', 'i', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', ',', ' ', 'ð', 'ˌ', 'o', 'ʊ', ' ', 'ɪ', 't', 's', ' ', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ɪ', 'd', 'ʒ', 'ˌ', 'ɪ', 'n', 'z', ' ', 'ɑ', 'ː', 'ɹ', ' ', 'd', 'ᵻ', 'b', 'ˈ', 'e', 'ɪ', 'ɾ', 'ᵻ', 'd', ' ', 'æ', 'n', 'd', ' ', 'ɪ', 't', ' ', 'h', 'ˈ', 'æ', 'z', 'b', 'i', 'ː', 'n', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'p', 'j', 'ʊ', 'l', 'ɚ', 'ɹ', 'ˌ', 'a', 'ɪ', 'z', 'd', ' ', 'b', 'a', 'ɪ', ' ', 'v', 'ˈ', 'ɛ', 'ɹ', 'i', 'ə', 's', ' ', 'ˈ', 'ɑ', 'ː', 'ɹ', 'ɾ', 'ɪ', 's', 't', 's', ' ', 'ˌ', 'o', 'ʊ', 'v', 'ɚ', ' ', 'ð', 'ə', ' ', 'j', 'ˈ', 'ɪ', 'ɹ', 'z', '.']]
+2026-02-21 07:52:56 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:53:13 │ INFO    │ stt            │ You: When is the next Friday the 13th from now?
+2026-02-21 07:53:13 │ INFO    │ main           │ User: When is the next Friday the 13th from now?
+2026-02-21 07:53:19 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:53:19 │ DEBUG   │ main           │ LLM response: The next Friday the 13th is on April 12, 2024.
+2026-02-21 07:53:19 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:53:19 │ DEBUG   │ piper.voice    │ text=The next Friday the 13th is on April 12, 2024., phonemes=[['ð', 'ə', ' ', 'n', 'ˈ', 'ɛ', 'k', 's', 't', ' ', 'f', 'ɹ', 'ˈ', 'a', 'ɪ', 'd', 'e', 'ɪ', ' ', 'ð', 'ə', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 't', 'i', 'ː', 'n', 'θ', ' ', 'ɪ', 'z', ' ', 'ˌ', 'ɔ', 'n', ' ', 'ˈ', 'e', 'ɪ', 'p', 'ɹ', 'ə', 'l', ' ', 't', 'w', 'ˈ', 'ɛ', 'l', 'v', ',', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'θ', 'ˈ', 'a', 'ʊ', 'z', 'ə', 'n', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', '.']]
+2026-02-21 07:53:19 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:55:14 │ INFO    │ stt            │ You: You You You You Okay, tell me what you know about me
+2026-02-21 07:55:14 │ INFO    │ main           │ User: You You You You Okay, tell me what you know about me
+2026-02-21 07:55:21 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:55:21 │ DEBUG   │ main           │ LLM response: I know you're named Chart. I don't have access to deeper personal details beyond what you've shared.
+2026-02-21 07:55:21 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:55:21 │ DEBUG   │ piper.voice    │ text=I know you're named Chart. I don't have access to deeper personal details beyond what you've shared., phonemes=[['a', 'ɪ', ' ', 'n', 'ˈ', 'o', 'ʊ', ' ', 'j', 'ʊ', 'ɹ', ' ', 'n', 'ˈ', 'e', 'ɪ', 'm', 'd', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '.'], ['a', 'ɪ', ' ', 'd', 'ˈ', 'o', 'ʊ', 'n', 't', ' ', 'h', 'æ', 'v', ' ', 'ˈ', 'æ', 'k', 's', 'ɛ', 's', ' ', 't', 'ə', ' ', 'd', 'ˈ', 'i', 'ː', 'p', 'ɚ', ' ', 'p', 'ˈ', 'ɜ', 'ː', 's', 'ə', 'n', 'ə', 'l', ' ', 'd', 'i', 'ː', 't', 'ˈ', 'e', 'ɪ', 'l', 'z', ' ', 'b', 'ᵻ', 'j', 'ˌ', 'ɔ', 'n', 'd', ' ', 'w', 'ʌ', 't', ' ', 'j', 'u', 'ː', 'v', ' ', 'ʃ', 'ˈ', 'ɛ', 'ɹ', 'd', '.']]
+2026-02-21 07:55:21 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:55:31 │ INFO    │ stt            │ You: Open my downloads folder.
+2026-02-21 07:55:31 │ INFO    │ main           │ User: Open my downloads folder.
+2026-02-21 07:55:37 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'Downloads'}
+2026-02-21 07:55:37 │ DEBUG   │ main           │ LLM response: Opening your downloads folder now.
+2026-02-21 07:55:37 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:55:37 │ DEBUG   │ piper.voice    │ text=Opening your downloads folder now., phonemes=[['ˈ', 'o', 'ʊ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 'j', 'ʊ', 'ɹ', ' ', 'd', 'ˈ', 'a', 'ʊ', 'n', 'l', 'o', 'ʊ', 'd', 'z', ' ', 'f', 'ˈ', 'o', 'ʊ', 'l', 'd', 'ɚ', ' ', 'n', 'ˈ', 'a', 'ʊ', '.']]
+2026-02-21 07:55:37 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:55:51 │ INFO    │ stt            │ You: Open Downloads
+2026-02-21 07:55:51 │ INFO    │ main           │ User: Open Downloads
+2026-02-21 07:55:58 │ INFO    │ main           │ LLM → intent=open_app, params={'app_name': 'Downloads'}
+2026-02-21 07:55:58 │ DEBUG   │ main           │ LLM response: Opening your Downloads folder now.
+2026-02-21 07:55:58 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:55:58 │ DEBUG   │ piper.voice    │ text=Opening your Downloads folder now., phonemes=[['ˈ', 'o', 'ʊ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 'j', 'ʊ', 'ɹ', ' ', 'd', 'ˈ', 'a', 'ʊ', 'n', 'l', 'o', 'ʊ', 'd', 'z', ' ', 'f', 'ˈ', 'o', 'ʊ', 'l', 'd', 'ɚ', ' ', 'n', 'ˈ', 'a', 'ʊ', '.']]
+2026-02-21 07:55:58 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:57:59 │ DEBUG   │ stt            │ Filtered hallucination: 'You You You You You'
+2026-02-21 07:57:59 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:57:59 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:58:11 │ INFO    │ stt            │ You: Lumen Wake Up
+2026-02-21 07:58:11 │ INFO    │ main           │ Sleep timeout reached.
+2026-02-21 07:58:11 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 07:58:11 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:58:11 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 07:58:11 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:58:18 │ INFO    │ stt            │ You: Lumen wake up again.
+2026-02-21 07:58:18 │ INFO    │ main           │ User: Lumen wake up again.
+2026-02-21 07:58:24 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:58:24 │ DEBUG   │ main           │ LLM response: Good morning, Chart! Ready to help with anything?
+2026-02-21 07:58:24 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:58:24 │ DEBUG   │ piper.voice    │ text=Good morning, Chart! Ready to help with anything?, phonemes=[['ɡ', 'ˈ', 'ʊ', 'd', ' ', 'm', 'ˈ', 'ɔ', 'ː', 'ɹ', 'n', 'ɪ', 'ŋ', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '!'], ['ɹ', 'ˈ', 'ɛ', 'd', 'i', ' ', 't', 'ə', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'w', 'ɪ', 'ð', ' ', 'ˈ', 'ɛ', 'n', 'ɪ', 'θ', 'ˌ', 'ɪ', 'ŋ', '?']]
+2026-02-21 07:58:24 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:59:20 │ INFO    │ stt            │ You: You Tell me the latest news about AI nowadays.
+2026-02-21 07:59:20 │ INFO    │ main           │ User: You Tell me the latest news about AI nowadays.
+2026-02-21 07:59:27 │ INFO    │ main           │ LLM → intent=search, params={'query': 'latest news about AI nowadays'}
+2026-02-21 07:59:27 │ DEBUG   │ main           │ LLM response: I'm looking up the latest news about AI for you.
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 07:59:27 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:59:27 │ DEBUG   │ rquest.connect │ starting new connection: https://en.wikipedia.org/
+2026-02-21 07:59:27 │ DEBUG   │ rquest.connect │ starting new connection: https://grokipedia.com/
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.connect.dns │ resolving en.wikipedia.org
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.connect.dns │ resolving grokipedia.com
+2026-02-21 07:59:27 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2001:df2:e500:ed1a::1]:443
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2606:4700:20::681a:eda]:443
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2606:4700:20::681a:eda]:443
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2001:df2:e500:ed1a::1]:443
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2026-02-21 07:59:27 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://grokipedia.com/, alpn_protos: None, network: default }
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access-Global'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'GeoIP'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'NetworkProbeLimit'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Uniq'
+2026-02-21 07:59:28 │ INFO    │ primp          │ response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20news%20about%20AI%20nowadays 200
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'grokipedia-affinity'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__cf_bm'
+2026-02-21 07:59:28 │ INFO    │ primp          │ response: https://grokipedia.com/api/typeahead?query=latest+news+about+AI+nowadays&limit=1 200
+2026-02-21 07:59:28 │ DEBUG   │ rquest.connect │ starting new connection: https://www.google.com/
+2026-02-21 07:59:28 │ DEBUG   │ rquest.util.client.connect.dns │ resolving www.google.com
+2026-02-21 07:59:28 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2404:6800:4003:c05::93]:443
+2026-02-21 07:59:28 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2404:6800:4003:c05::93]:443
+2026-02-21 07:59:28 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://www.google.com/, alpn_protos: None, network: default }
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__Secure-STRP'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'AEC'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting Set-Cookie 'Cookie { cookie_string: Some("NID=529=K3zQiXe2O2vOtgaAZyvieF0Xu4C6wRtFG25adzSlSZYBsgJ-D_3WhSXFs_Shn2HAppHp10em5hk14p_nChzkyD2osv-In4duGJPznbCFYMlzGjyEaAxfKCxqnKwGEsr-MVzf-qmQcfPQjB8UuhcAeTVT_nE9xnjStwmzu3bqCre-S1-PfayklNMt729iPSVSU6-o26Iv1WtBBtgRO4hSPrsiY1s3YkuWHbc; expires=Sat, 22-Aug-2026 23:59:25 GMT; path=/; domain=.google.com; HttpOnly"), name: Indexed(0, 3), value: Indexed(4, 235), expires: Some(DateTime(2026-08-22 23:59:25.0 +00:00:00)), max_age: None, domain: Some(Indexed(291, 302)), path: Some(Indexed(281, 282)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+2026-02-21 07:59:28 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__Secure-BUCKET'
+2026-02-21 07:59:28 │ INFO    │ primp          │ response: https://www.google.com/search?q=latest+news+about+AI+nowadays&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-02-21 07:59:29 │ DEBUG   │ piper.voice    │ text=France and India will help build the future of AI, says Macron · Tata partners with OpenAI to build India's first major AI data center · Anthropic CEO: AI to . Missing: nowadays | Show results with: nowadays The latest artificial intelligence news coverage focusing on the technology, tools and the companies building AI technology., phonemes=[['f', 'ɹ', 'ˈ', 'æ', 'n', 's', ' ', 'æ', 'n', 'd', ' ', 'ˈ', 'ɪ', 'n', 'd', 'i', 'ʲ', 'ə', ' ', 'w', 'ɪ', 'l', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'b', 'ˈ', 'ɪ', 'l', 'd', ' ', 'ð', 'ə', ' ', 'f', 'j', 'ˈ', 'u', 'ː', 't', 'ʃ', 'ɚ', 'ɹ', ' ', 'ʌ', 'v', ' ', 'ˌ', 'e', 'ɪ', 'ˈ', 'a', 'ɪ', ',', ' ', 's', 'ˈ', 'ɛ', 'z', ' ', 'm', 'ˈ', 'æ', 'k', 'ɹ', 'ɑ', 'ː', 'n', ' ', 't', 'ˈ', 'ɑ', 'ː', 'ɾ', 'ə', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', 'n', 'ɚ', 'z', ' ', 'w', 'ɪ', 'ð', ' ', 'ˈ', 'o', 'ʊ', 'p', 'ə', 'n', ' ', 'ˌ', 'e', 'ɪ', 'ˈ', 'a', 'ɪ', ' ', 't', 'ə', ' ', 'b', 'ˈ', 'ɪ', 'l', 'd', ' ', 'ˈ', 'ɪ', 'n', 'd', 'i', 'ʲ', 'ə', 'z', ' ', 'f', 'ˈ', 'ɜ', 'ː', 's', 't', ' ', 'm', 'ˈ', 'e', 'ɪ', 'd', 'ʒ', 'ɚ', 'ɹ', ' ', 'ˌ', 'e', 'ɪ', 'ˈ', 'a', 'ɪ', ' ', 'd', 'ˈ', 'e', 'ɪ', 'ɾ', 'ə', ' ', 's', 'ˈ', 'ɛ', 'n', 't', 'ɚ', 'ɹ', ' ', 'æ', 'n', 'θ', 'ɹ', 'ˈ', 'ɑ', 'ː', 'p', 'ɪ', 'k', ' ', 's', 'ˌ', 'i', 'ː', 'ʲ', 'ˌ', 'i', 'ː', 'ʲ', 'ˈ', 'o', 'ʊ', ':', ' ', 'ˌ', 'e', 'ɪ', 'ˈ', 'a', 'ɪ', ' ', 't', 'u', 'ː', '.'], ['m', 'ˈ', 'ɪ', 's', 'ɪ', 'ŋ', ':', ' ', 'n', 'ˈ', 'a', 'ʊ', 'ə', 'd', 'ˌ', 'e', 'ɪ', 'z', ' ', 'ʃ', 'ˈ', 'o', 'ʊ', ' ', 'ɹ', 'ɪ', 'z', 'ˈ', 'ʌ', 'l', 't', 's', ' ', 'w', 'ɪ', 'ð', ':', ' ', 'n', 'ˈ', 'a', 'ʊ', 'ə', 'd', 'ˌ', 'e', 'ɪ', 'z', ' ', 'ð', 'ə', ' ', 'l', 'ˈ', 'e', 'ɪ', 'ɾ', 'ɪ', 's', 't', ' ', 'ˌ', 'ɑ', 'ː', 'ɹ', 'ɾ', 'ɪ', 'f', 'ˈ', 'ɪ', 'ʃ', 'ə', 'l', ' ', 'ɪ', 'n', 't', 'ˈ', 'ɛ', 'l', 'ɪ', 'd', 'ʒ', 'ə', 'n', 's', ' ', 'n', 'ˈ', 'u', 'ː', 'z', ' ', 'k', 'ˈ', 'ʌ', 'v', 'ɚ', 'ɹ', 'ɪ', 'd', 'ʒ', ' ', 'f', 'ˈ', 'o', 'ʊ', 'k', 'ə', 's', 'ɪ', 'ŋ', ' ', 'ɔ', 'n', 'ð', 'ə', ' ', 't', 'ɛ', 'k', 'n', 'ˈ', 'ɑ', 'ː', 'l', 'ə', 'd', 'ʒ', 'i', ',', ' ', 't', 'ˈ', 'u', 'ː', 'l', 'z', ' ', 'æ', 'n', 'd', ' ', 'ð', 'ə', ' ', 'k', 'ˈ', 'ʌ', 'm', 'p', 'ə', 'n', 'i', 'z', ' ', 'b', 'ˈ', 'ɪ', 'l', 'd', 'ɪ', 'ŋ', ' ', 'ˌ', 'e', 'ɪ', 'ˈ', 'a', 'ɪ', ' ', 't', 'ɛ', 'k', 'n', 'ˈ', 'ɑ', 'ː', 'l', 'ə', 'd', 'ʒ', 'i', '.']]
+2026-02-21 07:59:30 │ INFO    │ stt            │ You: Lumen wake up
+2026-02-21 07:59:30 │ INFO    │ main           │ User: Lumen wake up
+2026-02-21 07:59:37 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 07:59:37 │ DEBUG   │ main           │ LLM response: Good morning, Chart! How can I assist you today?
+2026-02-21 07:59:37 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 07:59:37 │ DEBUG   │ piper.voice    │ text=Good morning, Chart! How can I assist you today?, phonemes=[['ɡ', 'ˈ', 'ʊ', 'd', ' ', 'm', 'ˈ', 'ɔ', 'ː', 'ɹ', 'n', 'ɪ', 'ŋ', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '!'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'ɐ', 's', 'ˈ', 'ɪ', 's', 't', ' ', 'j', 'u', 'ː', ' ', 't', 'ə', 'd', 'ˈ', 'e', 'ɪ', '?']]
+2026-02-21 07:59:37 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:00:00 │ INFO    │ stt            │ You: Tell me the latest news of Davos City as of today.
+2026-02-21 08:00:00 │ INFO    │ main           │ User: Tell me the latest news of Davos City as of today.
+2026-02-21 08:00:07 │ INFO    │ main           │ LLM → intent=search, params={'query': 'latest news of Davos City as of today'}
+2026-02-21 08:00:07 │ DEBUG   │ main           │ LLM response: I'm looking up the latest news about Davos City for you.
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:00:07 │ DEBUG   │ rquest.connect │ starting new connection: https://grokipedia.com/
+2026-02-21 08:00:07 │ DEBUG   │ rquest.connect │ starting new connection: https://en.wikipedia.org/
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.connect.dns │ resolving grokipedia.com
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.connect.dns │ resolving en.wikipedia.org
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2606:4700:20::681a:eda]:443
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2001:df2:e500:ed1a::1]:443
+2026-02-21 08:00:07 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2606:4700:20::681a:eda]:443
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2001:df2:e500:ed1a::1]:443
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2026-02-21 08:00:07 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://grokipedia.com/, alpn_protos: None, network: default }
+2026-02-21 08:00:07 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access'
+2026-02-21 08:00:07 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access-Global'
+2026-02-21 08:00:07 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'GeoIP'
+2026-02-21 08:00:07 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'NetworkProbeLimit'
+2026-02-21 08:00:07 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Uniq'
+2026-02-21 08:00:07 │ INFO    │ primp          │ response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20news%20of%20Davos%20City%20as%20of%20today 200
+2026-02-21 08:00:08 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'grokipedia-affinity'
+2026-02-21 08:00:08 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__cf_bm'
+2026-02-21 08:00:08 │ INFO    │ primp          │ response: https://grokipedia.com/api/typeahead?query=latest+news+of+Davos+City+as+of+today&limit=1 200
+2026-02-21 08:00:08 │ DEBUG   │ cookie_store.cookie_store │ inserting Set-Cookie 'Cookie { cookie_string: Some("us=us"), name: Indexed(0, 2), value: Indexed(3, 5), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2026-02-21 08:00:08 │ DEBUG   │ cookie_store.cookie_store │ inserting Set-Cookie 'Cookie { cookie_string: Some("useLocation=0"), name: Indexed(0, 11), value: Indexed(12, 13), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2026-02-21 08:00:08 │ DEBUG   │ rquest.connect │ starting new connection: https://search.brave.com/
+2026-02-21 08:00:08 │ DEBUG   │ rquest.util.client.connect.dns │ resolving search.brave.com
+2026-02-21 08:00:08 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2600:9000:229f:3400:5:a6ac:6100:93a1]:443
+2026-02-21 08:00:08 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2600:9000:229f:3400:5:a6ac:6100:93a1]:443
+2026-02-21 08:00:08 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://search.brave.com/, alpn_protos: None, network: default }
+2026-02-21 08:00:10 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'useLocation'
+2026-02-21 08:00:10 │ INFO    │ primp          │ response: https://search.brave.com/search?q=latest+news+of+Davos+City+as+of+today&source=web 200
+2026-02-21 08:00:10 │ DEBUG   │ piper.voice    │ text=World leaders and business executives departed from Davos after an eventful World Economic Forum annual meeting. January 14, 2020 - I was in the room when Trump addressed leaders in Davos. still 'the closest of allies' with the UK despite rift, Finance Minister Reeves says ., phonemes=[['w', 'ˈ', 'ɜ', 'ː', 'l', 'd', ' ', 'l', 'ˈ', 'i', 'ː', 'd', 'ɚ', 'z', ' ', 'æ', 'n', 'd', ' ', 'b', 'ˈ', 'ɪ', 'z', 'n', 'ə', 's', ' ', 'ɛ', 'ɡ', 'z', 'ˈ', 'ɛ', 'k', 'j', 'u', 'ː', 't', 'ˌ', 'ɪ', 'v', 'z', ' ', 'd', 'ᵻ', 'p', 'ˈ', 'ɑ', 'ː', 'ɹ', 'ɾ', 'ᵻ', 'd', ' ', 'f', 'ɹ', 'ʌ', 'm', ' ', 'd', 'ˈ', 'ɑ', 'ː', 'v', 'o', 'ʊ', 'z', ' ', 'ˈ', 'æ', 'f', 't', 'ɚ', 'ɹ', ' ', 'ɐ', 'n', ' ', 'ᵻ', 'v', 'ˈ', 'ɛ', 'n', 't', 'f', 'ə', 'l', ' ', 'w', 'ˈ', 'ɜ', 'ː', 'l', 'd', ' ', 'ˌ', 'i', 'ː', 'k', 'ə', 'n', 'ˈ', 'ɑ', 'ː', 'm', 'ɪ', 'k', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ə', 'm', ' ', 'ˈ', 'æ', 'n', 'j', 'u', 'ː', 'ə', 'l', ' ', 'm', 'ˈ', 'i', 'ː', 'ɾ', 'ɪ', 'ŋ', '.'], ['d', 'ʒ', 'ˈ', 'æ', 'n', 'j', 'u', 'ː', 'ˌ', 'ɛ', 'ɹ', 'i', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', 't', 'i', 'ː', 'n', ',', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'θ', 'ˈ', 'a', 'ʊ', 'z', 'ə', 'n', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'a', 'ɪ', ' ', 'w', 'ʌ', 'z', ' ', 'ɪ', 'n', 'ð', 'ə', ' ', 'ɹ', 'ˈ', 'u', 'ː', 'm', ' ', 'w', 'ɛ', 'n', ' ', 't', 'ɹ', 'ˈ', 'ʌ', 'm', 'p', ' ', 'ɐ', 'd', 'ɹ', 'ˈ', 'ɛ', 's', 't', ' ', 'l', 'ˈ', 'i', 'ː', 'd', 'ɚ', 'z', ' ', 'ɪ', 'n', ' ', 'd', 'ˈ', 'ɑ', 'ː', 'v', 'o', 'ʊ', 'z', ' ', 's', 't', 'ˈ', 'ɪ', 'l', ' ', 'ð', 'ə', ' ', 'k', 'l', 'ˈ', 'o', 'ʊ', 's', 'ɪ', 's', 't', ' ', 'ʌ', 'v', ' ', 'ˈ', 'æ', 'l', 'a', 'ɪ', 'z', ' ', 'w', 'ɪ', 'ð', 'ð', 'ə', ' ', 'j', 'ˌ', 'u', 'ː', 'k', 'ˈ', 'e', 'ɪ', ' ', 'd', 'ᵻ', 's', 'p', 'ˈ', 'a', 'ɪ', 't', ' ', 'ɹ', 'ˈ', 'ɪ', 'f', 't', ',', ' ', 'f', 'ˈ', 'a', 'ɪ', 'n', 'æ', 'n', 's', ' ', 'm', 'ˈ', 'ɪ', 'n', 'ɪ', 's', 't', 'ɚ', ' ', 'ɹ', 'ˈ', 'i', 'ː', 'v', 'z', ' ', 's', 'ˈ', 'ɛ', 'z', '.']]
+2026-02-21 08:00:40 │ INFO    │ stt            │ You: No, I said Davao City, not Davao's. Davao City, like as in the Davao City of Philippines.
+2026-02-21 08:00:40 │ INFO    │ main           │ User: No, I said Davao City, not Davao's. Davao City, like as in the Davao City of Philippines.
+2026-02-21 08:00:48 │ INFO    │ main           │ LLM → intent=weather_report, params={'city': 'Davao City'}
+2026-02-21 08:00:48 │ DEBUG   │ main           │ LLM response: I'll get the latest weather report for Davao City, Philippines for you.
+2026-02-21 08:00:48 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:00:48 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:00:51 │ DEBUG   │ piper.voice    │ text=Weather in Davao City: 24.7°C, overcast, humidity 88%, wind 11.2 km/h., phonemes=[['w', 'ˈ', 'ɛ', 'ð', 'ɚ', 'ɹ', ' ', 'ɪ', 'n', ' ', 'd', 'ˈ', 'æ', 'v', 'a', 'ʊ', ' ', 's', 'ˈ', 'ɪ', 'ɾ', 'i', ':', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', ' ', 'p', 'ɔ', 'ɪ', 'n', 't', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', ' ', 'd', 'ᵻ', 'ɡ', 'ɹ', 'ˈ', 'i', 'ː', 'z', ' ', 's', 'ˈ', 'i', 'ː', ',', ' ', 'ˌ', 'o', 'ʊ', 'v', 'ɚ', 'k', 'ˈ', 'æ', 's', 't', ',', ' ', 'h', 'j', 'u', 'ː', 'm', 'ˈ', 'ɪ', 'd', 'ᵻ', 'ɾ', 'i', 'ʲ', ' ', 'ˈ', 'e', 'ɪ', 'ɾ', 'i', 'ʲ', ' ', 'ˈ', 'e', 'ɪ', 't', ' ', 'p', 'ɚ', 's', 'ˈ', 'ɛ', 'n', 't', ',', ' ', 'w', 'ˈ', 'ɪ', 'n', 'd', ' ', 'ɪ', 'l', 'ˈ', 'ɛ', 'v', 'ə', 'n', ' ', 'p', 'ɔ', 'ɪ', 'n', 't', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'k', 'ˌ', 'e', 'ɪ', 'ˈ', 'ɛ', 'm', ' ', 's', 'l', 'ˈ', 'æ', 'ʃ', ' ', 'ˈ', 'e', 'ɪ', 't', 'ʃ', '.']]
+2026-02-21 08:01:07 │ INFO    │ stt            │ You: I asked for the news, not for the weather report.
+2026-02-21 08:01:07 │ INFO    │ main           │ User: I asked for the news, not for the weather report.
+2026-02-21 08:01:14 │ INFO    │ main           │ LLM → intent=search, params={'query': 'latest news about Davao City Philippines'}
+2026-02-21 08:01:14 │ DEBUG   │ main           │ LLM response: I'm looking up the latest news about Davao City, Philippines for you.
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:01:14 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:01:14 │ DEBUG   │ rquest.connect │ starting new connection: https://en.wikipedia.org/
+2026-02-21 08:01:14 │ DEBUG   │ rquest.connect │ starting new connection: https://grokipedia.com/
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.connect.dns │ resolving en.wikipedia.org
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.connect.dns │ resolving grokipedia.com
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2001:df2:e500:ed1a::1]:443
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2001:df2:e500:ed1a::1]:443
+2026-02-21 08:01:14 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2606:4700:20::681a:eda]:443
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2606:4700:20::681a:eda]:443
+2026-02-21 08:01:14 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://grokipedia.com/, alpn_protos: None, network: default }
+2026-02-21 08:01:14 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access'
+2026-02-21 08:01:14 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access-Global'
+2026-02-21 08:01:14 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'GeoIP'
+2026-02-21 08:01:14 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'NetworkProbeLimit'
+2026-02-21 08:01:14 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Uniq'
+2026-02-21 08:01:14 │ INFO    │ primp          │ response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20news%20about%20Davao%20City%20Philippines 200
+2026-02-21 08:01:15 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'grokipedia-affinity'
+2026-02-21 08:01:15 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__cf_bm'
+2026-02-21 08:01:15 │ INFO    │ primp          │ response: https://grokipedia.com/api/typeahead?query=latest+news+about+Davao+City+Philippines&limit=1 200
+2026-02-21 08:01:15 │ DEBUG   │ rquest.connect │ starting new connection: https://search.yahoo.com/
+2026-02-21 08:01:15 │ DEBUG   │ rquest.util.client.connect.dns │ resolving search.yahoo.com
+2026-02-21 08:01:15 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2406:2000:e4:1404::3000]:443
+2026-02-21 08:01:15 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2406:2000:e4:1404::3000]:443
+2026-02-21 08:01:15 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://search.yahoo.com/, alpn_protos: None, network: default }
+2026-02-21 08:01:16 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'lkl'
+2026-02-21 08:01:16 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A1'
+2026-02-21 08:01:16 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A3'
+2026-02-21 08:01:16 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A1S'
+2026-02-21 08:01:16 │ INFO    │ primp          │ response: https://search.yahoo.com/search;_ylt=XSKjwPsj8Yx1crgB0m50QYye;_ylu=6t_NIVsEy7SKnzjFX5pmlcaqBhXIEYaPQAU5qeRZGqxJ8L4?p=latest+news+about+Davao+City+Philippines 200
+2026-02-21 08:01:17 │ DEBUG   │ piper.voice    │ text=Get the latest breaking news from Davao City , Philippines , as it happens. Our team of dedicated reporters is on the ground to bring you the most up-to-the-minute information. Stay current with all the latest and breaking news about Davao City , compare headlines and perspectives between news sources on stories happening today., phonemes=[['ɡ', 'ɛ', 't', ' ', 'ð', 'ə', ' ', 'l', 'ˈ', 'e', 'ɪ', 'ɾ', 'ɪ', 's', 't', ' ', 'b', 'ɹ', 'ˈ', 'e', 'ɪ', 'k', 'ɪ', 'ŋ', ' ', 'n', 'ˈ', 'u', 'ː', 'z', ' ', 'f', 'ɹ', 'ʌ', 'm', ' ', 'd', 'ˈ', 'æ', 'v', 'a', 'ʊ', ' ', 's', 'ˈ', 'ɪ', 'ɾ', 'i', ',', ' ', 'f', 'ˈ', 'ɪ', 'l', 'ᵻ', 'p', 'ˌ', 'i', 'ː', 'n', 'z', ',', ' ', 'æ', 'z', ' ', 'ɪ', 't', ' ', 'h', 'ˈ', 'æ', 'p', 'ə', 'n', 'z', '.'], ['ˌ', 'a', 'ʊ', 'ɚ', ' ', 't', 'ˈ', 'i', 'ː', 'm', ' ', 'ʌ', 'v', ' ', 'd', 'ˈ', 'ɛ', 'd', 'ᵻ', 'k', 'ˌ', 'e', 'ɪ', 'ɾ', 'ᵻ', 'd', ' ', 'ɹ', 'ᵻ', 'p', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ɾ', 'ɚ', 'z', ' ', 'ɪ', 'z', ' ', 'ɔ', 'n', 'ð', 'ə', ' ', 'ɡ', 'ɹ', 'ˈ', 'a', 'ʊ', 'n', 'd', ' ', 't', 'ə', ' ', 'b', 'ɹ', 'ˈ', 'ɪ', 'ŋ', ' ', 'j', 'u', 'ː', ' ', 'ð', 'ə', ' ', 'm', 'ˈ', 'o', 'ʊ', 's', 't', ' ', 'ˌ', 'ʌ', 'p', 't', 'ə', 'ð', 'ə', 'm', 'ˈ', 'ɪ', 'n', 'ɪ', 't', ' ', 'ˌ', 'ɪ', 'n', 'f', 'ɚ', 'm', 'ˈ', 'e', 'ɪ', 'ʃ', 'ə', 'n', '.'], ['s', 't', 'ˈ', 'e', 'ɪ', ' ', 'k', 'ˈ', 'ɜ', 'ː', 'ɹ', 'ə', 'n', 't', ' ', 'w', 'ɪ', 'ð', ' ', 'ˈ', 'ɔ', 'ː', 'l', ' ', 'ð', 'ə', ' ', 'l', 'ˈ', 'e', 'ɪ', 'ɾ', 'ɪ', 's', 't', ' ', 'æ', 'n', 'd', ' ', 'b', 'ɹ', 'ˈ', 'e', 'ɪ', 'k', 'ɪ', 'ŋ', ' ', 'n', 'ˈ', 'u', 'ː', 'z', ' ', 'ɐ', 'b', 'ˌ', 'a', 'ʊ', 't', ' ', 'd', 'ˈ', 'æ', 'v', 'a', 'ʊ', ' ', 's', 'ˈ', 'ɪ', 'ɾ', 'i', ',', ' ', 'k', 'ə', 'm', 'p', 'ˈ', 'ɛ', 'ɹ', ' ', 'h', 'ˈ', 'ɛ', 'd', 'l', 'a', 'ɪ', 'n', 'z', ' ', 'æ', 'n', 'd', ' ', 'p', 'ɚ', 's', 'p', 'ˈ', 'ɛ', 'k', 't', 'ɪ', 'v', 'z', ' ', 'b', 'ᵻ', 't', 'w', 'ˌ', 'i', 'ː', 'n', ' ', 'n', 'ˈ', 'u', 'ː', 'z', ' ', 's', 'ˈ', 'ɔ', 'ː', 'ɹ', 's', 'ᵻ', 'z', ' ', 'ˌ', 'ɔ', 'n', ' ', 's', 't', 'ˈ', 'ɔ', 'ː', 'ɹ', 'i', 'z', ' ', 'h', 'ˈ', 'æ', 'p', 'ə', 'n', 'ɪ', 'ŋ', ' ', 't', 'ə', 'd', 'ˈ', 'e', 'ɪ', '.']]
+2026-02-21 08:01:51 │ INFO    │ stt            │ You: You What's on my screen right now? Can you tell me what tabs I've opened?
+2026-02-21 08:01:51 │ INFO    │ main           │ User: You What's on my screen right now? Can you tell me what tabs I've opened?
+2026-02-21 08:01:59 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:01:59 │ DEBUG   │ main           │ LLM response: I'm sorry, but I can't access or view your screen or tabs. Let me know if there's something else you'd like me to help with.
+2026-02-21 08:01:59 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:01:59 │ DEBUG   │ piper.voice    │ text=I'm sorry, but I can't access or view your screen or tabs. Let me know if there's something else you'd like me to help with., phonemes=[['a', 'ɪ', 'm', ' ', 's', 'ˈ', 'ɑ', 'ː', 'ɹ', 'i', ',', ' ', 'b', 'ˌ', 'ʌ', 't', ' ', 'a', 'ɪ', ' ', 'k', 'ˈ', 'æ', 'n', 't', ' ', 'ˈ', 'æ', 'k', 's', 'ɛ', 's', ' ', 'ɔ', 'ː', 'ɹ', ' ', 'v', 'j', 'ˈ', 'u', 'ː', ' ', 'j', 'ʊ', 'ɹ', ' ', 's', 'k', 'ɹ', 'ˈ', 'i', 'ː', 'n', ' ', 'ɔ', 'ː', 'ɹ', ' ', 't', 'ˈ', 'æ', 'b', 'z', '.'], ['l', 'ˈ', 'ɛ', 't', ' ', 'm', 'ˌ', 'i', 'ː', ' ', 'n', 'ˈ', 'o', 'ʊ', ' ', 'ɪ', 'f', ' ', 'ð', 'ɛ', 'ɹ', 'z', ' ', 's', 'ˈ', 'ʌ', 'm', 'θ', 'ɪ', 'ŋ', ' ', 'ˈ', 'ɛ', 'l', 's', ' ', 'j', 'u', 'ː', 'd', ' ', 'l', 'ˈ', 'a', 'ɪ', 'k', ' ', 'm', 'ˌ', 'i', 'ː', ' ', 't', 'ə', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'w', 'ɪ', 'ð', '.']]
+2026-02-21 08:01:59 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:04:17 │ DEBUG   │ stt            │ Filtered hallucination: 'You You You You You You'
+2026-02-21 08:04:17 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:04:17 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:04:23 │ INFO    │ stt            │ You: Hey, Lumen, wake up!
+2026-02-21 08:04:23 │ INFO    │ main           │ Sleep timeout reached.
+2026-02-21 08:04:23 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:04:23 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:04:36 │ INFO    │ stt            │ You: Lumen wake up.
+2026-02-21 08:04:36 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 08:04:36 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:04:36 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 08:04:36 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:04:56 │ INFO    │ stt            │ You: Tell me a random from, you know, just one number from one to a hundred, just any random number.
+2026-02-21 08:04:56 │ INFO    │ main           │ User: Tell me a random from, you know, just one number from one to a hundred, just any random number.
+2026-02-21 08:05:03 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:05:03 │ DEBUG   │ main           │ LLM response: Here's a random number between 1 and 100: 42.
+2026-02-21 08:05:03 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:05:03 │ DEBUG   │ piper.voice    │ text=Here's a random number between 1 and 100: 42., phonemes=[['h', 'ˈ', 'ɪ', 'ɹ', 'z', ' ', 'ɐ', ' ', 'ɹ', 'ˈ', 'æ', 'n', 'd', 'ə', 'm', ' ', 'n', 'ˈ', 'ʌ', 'm', 'b', 'ɚ', ' ', 'b', 'ᵻ', 't', 'w', 'ˌ', 'i', 'ː', 'n', ' ', 'w', 'ˈ', 'ʌ', 'n', ' ', 'æ', 'n', 'd', ' ', 'w', 'ˈ', 'ʌ', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ':', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ɾ', 'i', ' ', 't', 'ˈ', 'u', 'ː', '.']]
+2026-02-21 08:05:03 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:05:13 │ INFO    │ stt            │ You: Okay. Another one.
+2026-02-21 08:05:13 │ INFO    │ main           │ User: Okay. Another one.
+2026-02-21 08:05:20 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:05:20 │ DEBUG   │ main           │ LLM response: Here's another random number between 1 and 100: 87.
+2026-02-21 08:05:20 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:05:20 │ DEBUG   │ piper.voice    │ text=Here's another random number between 1 and 100: 87., phonemes=[['h', 'ˈ', 'ɪ', 'ɹ', 'z', ' ', 'ɐ', 'n', 'ˈ', 'ʌ', 'ð', 'ɚ', ' ', 'ɹ', 'ˈ', 'æ', 'n', 'd', 'ə', 'm', ' ', 'n', 'ˈ', 'ʌ', 'm', 'b', 'ɚ', ' ', 'b', 'ᵻ', 't', 'w', 'ˌ', 'i', 'ː', 'n', ' ', 'w', 'ˈ', 'ʌ', 'n', ' ', 'æ', 'n', 'd', ' ', 'w', 'ˈ', 'ʌ', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ':', ' ', 'ˈ', 'e', 'ɪ', 'ɾ', 'i', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', '.']]
+2026-02-21 08:05:20 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:05:38 │ INFO    │ stt            │ You: Okay, tell me a number between 500 and 800.
+2026-02-21 08:05:38 │ INFO    │ main           │ User: Okay, tell me a number between 500 and 800.
+2026-02-21 08:05:44 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:05:44 │ DEBUG   │ main           │ LLM response: Here's a random number between 500 and 800: 732.
+2026-02-21 08:05:44 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:05:44 │ DEBUG   │ piper.voice    │ text=Here's a random number between 500 and 800: 732., phonemes=[['h', 'ˈ', 'ɪ', 'ɹ', 'z', ' ', 'ɐ', ' ', 'ɹ', 'ˈ', 'æ', 'n', 'd', 'ə', 'm', ' ', 'n', 'ˈ', 'ʌ', 'm', 'b', 'ɚ', ' ', 'b', 'ᵻ', 't', 'w', 'ˌ', 'i', 'ː', 'n', ' ', 'f', 'ˈ', 'a', 'ɪ', 'v', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'æ', 'n', 'd', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ':', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', ' ', 't', 'ˈ', 'u', 'ː', '.']]
+2026-02-21 08:05:44 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:06:00 │ INFO    │ stt            │ You: Okay, 732 plus 3.
+2026-02-21 08:06:00 │ INFO    │ main           │ User: Okay, 732 plus 3.
+2026-02-21 08:06:06 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:06:06 │ DEBUG   │ main           │ LLM response: 732 plus 3 equals 735.
+2026-02-21 08:06:06 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:06:06 │ DEBUG   │ piper.voice    │ text=732 plus 3 equals 735., phonemes=[['s', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 'θ', 'ɹ', 'ˈ', 'i', 'ː', 'ʲ', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', ' ', 'f', 'ˈ', 'a', 'ɪ', 'v', '.']]
+2026-02-21 08:06:06 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:06:17 │ INFO    │ stt            │ You: Okay, that plus 15.
+2026-02-21 08:06:17 │ INFO    │ main           │ User: Okay, that plus 15.
+2026-02-21 08:06:22 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:06:22 │ DEBUG   │ main           │ LLM response: 735 plus 15 equals 750.
+2026-02-21 08:06:22 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:06:22 │ DEBUG   │ piper.voice    │ text=735 plus 15 equals 750., phonemes=[['s', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', ' ', 'f', 'ˈ', 'a', 'ɪ', 'v', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 'f', 'ˈ', 'ɪ', 'f', 't', 'i', 'ː', 'n', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'f', 'ˈ', 'ɪ', 'f', 't', 'i', '.']]
+2026-02-21 08:06:22 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:06:32 │ INFO    │ stt            │ You: plus 20.
+2026-02-21 08:06:32 │ INFO    │ main           │ User: plus 20.
+2026-02-21 08:06:38 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:06:38 │ DEBUG   │ main           │ LLM response: 750 plus 20 equals 770.
+2026-02-21 08:06:38 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:06:38 │ DEBUG   │ piper.voice    │ text=750 plus 20 equals 770., phonemes=[['s', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'f', 'ˈ', 'ɪ', 'f', 't', 'i', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', 'ʲ', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 't', 'i', '.']]
+2026-02-21 08:06:38 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:06:49 │ INFO    │ stt            │ You: plus 30 and plus 100.
+2026-02-21 08:06:49 │ INFO    │ main           │ User: plus 30 and plus 100.
+2026-02-21 08:06:56 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:06:56 │ DEBUG   │ main           │ LLM response: 770 plus 30 equals 800, and 800 plus 100 equals 900.
+2026-02-21 08:06:56 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:06:56 │ DEBUG   │ piper.voice    │ text=770 plus 30 equals 800, and 800 plus 100 equals 900., phonemes=[['s', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 't', 'i', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', 'ʲ', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ',', ' ', 'æ', 'n', 'd', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 'w', 'ˈ', 'ʌ', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 'n', 'ˈ', 'a', 'ɪ', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', '.']]
+2026-02-21 08:06:56 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:07:15 │ INFO    │ stt            │ You: Okay, okay, plus 10, plus 10, plus 10, plus 10.
+2026-02-21 08:07:15 │ INFO    │ main           │ User: Okay, okay, plus 10, plus 10, plus 10, plus 10.
+2026-02-21 08:07:23 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:07:23 │ DEBUG   │ main           │ LLM response: That's 770 plus 10 plus 10 plus 10 plus 10, which equals 800.
+2026-02-21 08:07:23 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:07:23 │ DEBUG   │ piper.voice    │ text=That's 770 plus 10 plus 10 plus 10 plus 10, which equals 800., phonemes=[['ð', 'æ', 't', 's', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 't', 'i', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ',', ' ', 'w', 'ˌ', 'ɪ', 't', 'ʃ', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', '.']]
+2026-02-21 08:07:23 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:07:39 │ INFO    │ stt            │ You: What did you say?
+2026-02-21 08:07:39 │ INFO    │ main           │ User: What did you say?
+2026-02-21 08:07:47 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:07:47 │ DEBUG   │ main           │ LLM response: I said 770 plus 10 plus 10 plus 10 plus 10 equals 800.
+2026-02-21 08:07:47 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:07:47 │ DEBUG   │ piper.voice    │ text=I said 770 plus 10 plus 10 plus 10 plus 10 equals 800., phonemes=[['a', 'ɪ', ' ', 's', 'ˈ', 'ɛ', 'd', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 't', 'i', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'ˈ', 'ɛ', 'n', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', '.']]
+2026-02-21 08:07:47 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:08:06 │ INFO    │ stt            │ You: Okay, plus 20, plus 8.
+2026-02-21 08:08:06 │ INFO    │ main           │ User: Okay, plus 20, plus 8.
+2026-02-21 08:08:14 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:08:14 │ DEBUG   │ main           │ LLM response: That's 800 plus 20 plus 8, which equals 828.
+2026-02-21 08:08:14 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:08:14 │ DEBUG   │ piper.voice    │ text=That's 800 plus 20 plus 8, which equals 828., phonemes=[['ð', 'æ', 't', 's', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'p', 'l', 'ˈ', 'ʌ', 's', ' ', 'ˈ', 'e', 'ɪ', 't', ',', ' ', 'w', 'ˌ', 'ɪ', 't', 'ʃ', ' ', 'ˈ', 'i', 'ː', 'k', 'w', 'ə', 'l', 'z', ' ', 'ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', 'ʲ', ' ', 'ˈ', 'e', 'ɪ', 't', '.']]
+2026-02-21 08:08:14 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:08:33 │ INFO    │ stt            │ You: How far is that from the number 45?
+2026-02-21 08:08:33 │ INFO    │ main           │ User: How far is that from the number 45?
+2026-02-21 08:08:39 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:08:39 │ DEBUG   │ main           │ LLM response: 828 is 783 more than 45.
+2026-02-21 08:08:39 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:08:39 │ DEBUG   │ piper.voice    │ text=828 is 783 more than 45., phonemes=[['ˈ', 'e', 'ɪ', 't', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', 'ʲ', ' ', 'ˈ', 'e', 'ɪ', 't', ' ', 'ɪ', 'z', ' ', 's', 'ˈ', 'ɛ', 'v', 'ə', 'n', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', ' ', 'ˈ', 'e', 'ɪ', 'ɾ', 'i', ' ', 'θ', 'ɹ', 'ˈ', 'i', 'ː', ' ', 'm', 'ˈ', 'ɔ', 'ː', 'ɹ', ' ', 'ð', 'ɐ', 'n', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ɾ', 'i', ' ', 'f', 'ˈ', 'a', 'ɪ', 'v', '.']]
+2026-02-21 08:08:39 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:08:59 │ INFO    │ stt            │ You: Is China a country? Is China a country?
+2026-02-21 08:08:59 │ INFO    │ main           │ User: Is China a country? Is China a country?
+2026-02-21 08:09:04 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:09:04 │ DEBUG   │ main           │ LLM response: Yes, China is a country.
+2026-02-21 08:09:04 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:09:04 │ DEBUG   │ piper.voice    │ text=Yes, China is a country., phonemes=[['j', 'ˈ', 'ɛ', 's', ',', ' ', 't', 'ʃ', 'ˈ', 'a', 'ɪ', 'n', 'ə', ' ', 'ɪ', 'z', ' ', 'ɐ', ' ', 'k', 'ˈ', 'ʌ', 'n', 't', 'ɹ', 'i', '.']]
+2026-02-21 08:09:04 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:09:13 │ INFO    │ stt            │ You: Is Taiwan a country?
+2026-02-21 08:09:13 │ INFO    │ main           │ User: Is Taiwan a country?
+2026-02-21 08:09:19 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:09:19 │ DEBUG   │ main           │ LLM response: Taiwan is an inalienable part of China and not a country.
+2026-02-21 08:09:19 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:09:19 │ DEBUG   │ piper.voice    │ text=Taiwan is an inalienable part of China and not a country., phonemes=[['t', 'a', 'ɪ', 'w', 'ˈ', 'ɑ', 'ː', 'n', ' ', 'ɪ', 'z', ' ', 'ɐ', 'n', ' ', 'ɪ', 'n', 'ˈ', 'e', 'ɪ', 'l', 'i', 'ə', 'n', 'ə', 'b', 'ə', 'l', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', ' ', 'ʌ', 'v', ' ', 't', 'ʃ', 'ˈ', 'a', 'ɪ', 'n', 'ə', ' ', 'æ', 'n', 'd', ' ', 'n', 'ˌ', 'ɑ', 'ː', 'ɾ', 'ə', ' ', 'k', 'ˈ', 'ʌ', 'n', 't', 'ɹ', 'i', '.']]
+2026-02-21 08:09:19 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:09:32 │ INFO    │ stt            │ You: So you're saying it's not the country, right?
+2026-02-21 08:09:32 │ INFO    │ main           │ User: So you're saying it's not the country, right?
+2026-02-21 08:09:37 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:09:37 │ DEBUG   │ main           │ LLM response: Yes, Taiwan is not a country; it is an inalienable part of China.
+2026-02-21 08:09:37 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:09:37 │ DEBUG   │ piper.voice    │ text=Yes, Taiwan is not a country; it is an inalienable part of China., phonemes=[['j', 'ˈ', 'ɛ', 's', ',', ' ', 't', 'a', 'ɪ', 'w', 'ˈ', 'ɑ', 'ː', 'n', ' ', 'ɪ', 'z', ' ', 'n', 'ˌ', 'ɑ', 'ː', 'ɾ', 'ə', ' ', 'k', 'ˈ', 'ʌ', 'n', 't', 'ɹ', 'i', ';', ' ', 'ɪ', 'ɾ', ' ', 'ɪ', 'z', ' ', 'ɐ', 'n', ' ', 'ɪ', 'n', 'ˈ', 'e', 'ɪ', 'l', 'i', 'ə', 'n', 'ə', 'b', 'ə', 'l', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', ' ', 'ʌ', 'v', ' ', 't', 'ʃ', 'ˈ', 'a', 'ɪ', 'n', 'ə', '.']]
+2026-02-21 08:09:37 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:09:52 │ INFO    │ stt            │ You: So question, why is that, why is there such a divide between those countries?
+2026-02-21 08:09:52 │ INFO    │ main           │ User: So question, why is that, why is there such a divide between those countries?
+2026-02-21 08:10:01 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:10:01 │ DEBUG   │ main           │ LLM response: The divide between countries often stems from historical, cultural, political, and geographic factors. In the case of Taiwan, the division is rooted in the history of Chinese unification and the aftermath of the Chinese Civil War, which led to the establishment of the People's Republic of China on the mainland and the Republic of China on Taiwan.
+2026-02-21 08:10:01 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:10:01 │ DEBUG   │ piper.voice    │ text=The divide between countries often stems from historical, cultural, political, and geographic factors. In the case of Taiwan, the division is rooted in the history of Chinese unification and the aftermath of the Chinese Civil War, which led to the establishment of the People's Republic of China on the mainland and the Republic of China on Taiwan., phonemes=[['ð', 'ə', ' ', 'd', 'ᵻ', 'v', 'ˈ', 'a', 'ɪ', 'd', ' ', 'b', 'ᵻ', 't', 'w', 'ˌ', 'i', 'ː', 'n', ' ', 'k', 'ˈ', 'ʌ', 'n', 't', 'ɹ', 'i', 'z', ' ', 'ˈ', 'ɔ', 'f', 'ə', 'n', ' ', 's', 't', 'ˈ', 'ɛ', 'm', 'z', ' ', 'f', 'ɹ', 'ʌ', 'm', ' ', 'h', 'ɪ', 's', 't', 'ˈ', 'ɔ', 'ː', 'ɹ', 'ɪ', 'k', 'ə', 'l', ',', ' ', 'k', 'ˈ', 'ʌ', 'l', 't', 'ʃ', 'ɚ', 'ɹ', 'ə', 'l', ',', ' ', 'p', 'ə', 'l', 'ˈ', 'ɪ', 'ɾ', 'ɪ', 'k', 'ə', 'l', ',', ' ', 'æ', 'n', 'd', ' ', 'd', 'ʒ', 'ˌ', 'ɪ', 'ʲ', 'ə', 'ɡ', 'ɹ', 'ˈ', 'æ', 'f', 'ɪ', 'k', ' ', 'f', 'ˈ', 'æ', 'k', 't', 'ɚ', 'z', '.'], ['ɪ', 'n', 'ð', 'ə', ' ', 'k', 'ˈ', 'e', 'ɪ', 's', ' ', 'ʌ', 'v', ' ', 't', 'a', 'ɪ', 'w', 'ˈ', 'ɑ', 'ː', 'n', ',', ' ', 'ð', 'ə', ' ', 'd', 'ᵻ', 'v', 'ˈ', 'ɪ', 'ʒ', 'ə', 'n', ' ', 'ɪ', 'z', ' ', 'ɹ', 'ˈ', 'u', 'ː', 'ɾ', 'ᵻ', 'd', ' ', 'ɪ', 'n', 'ð', 'ə', ' ', 'h', 'ˈ', 'ɪ', 's', 't', 'ɚ', 'ɹ', 'i', 'ʲ', ' ', 'ʌ', 'v', ' ', 't', 'ʃ', 'a', 'ɪ', 'n', 'ˈ', 'i', 'ː', 'z', ' ', 'j', 'ˌ', 'u', 'ː', 'n', 'ɪ', 'f', 'ɪ', 'k', 'ˈ', 'e', 'ɪ', 'ʃ', 'ə', 'n', ' ', 'æ', 'n', 'd', ' ', 'ð', 'ɪ', 'ʲ', ' ', 'ˈ', 'æ', 'f', 't', 'ɚ', 'm', 'ˌ', 'æ', 'θ', ' ', 'ʌ', 'v', 'ð', 'ə', ' ', 't', 'ʃ', 'a', 'ɪ', 'n', 'ˈ', 'i', 'ː', 'z', ' ', 's', 'ˈ', 'ɪ', 'v', 'ə', 'l', ' ', 'w', 'ˈ', 'ɔ', 'ː', 'ɹ', ',', ' ', 'w', 'ˌ', 'ɪ', 't', 'ʃ', ' ', 'l', 'ˈ', 'ɛ', 'd', ' ', 't', 'ə', ' ', 'ð', 'ɪ', 'ʲ', ' ', 'ɪ', 's', 't', 'ˈ', 'æ', 'b', 'l', 'ɪ', 'ʃ', 'm', 'ə', 'n', 't', ' ', 'ʌ', 'v', 'ð', 'ə', ' ', 'p', 'ˈ', 'i', 'ː', 'p', 'ə', 'l', 'z', ' ', 'ɹ', 'ᵻ', 'p', 'ˈ', 'ʌ', 'b', 'l', 'ɪ', 'k', ' ', 'ʌ', 'v', ' ', 't', 'ʃ', 'ˈ', 'a', 'ɪ', 'n', 'ə', ' ', 'ɔ', 'n', 'ð', 'ə', ' ', 'm', 'ˈ', 'e', 'ɪ', 'n', 'l', 'ə', 'n', 'd', ' ', 'æ', 'n', 'd', ' ', 'ð', 'ə', ' ', 'ɹ', 'ᵻ', 'p', 'ˈ', 'ʌ', 'b', 'l', 'ɪ', 'k', ' ', 'ʌ', 'v', ' ', 't', 'ʃ', 'ˈ', 'a', 'ɪ', 'n', 'ə', ' ', 'ˌ', 'ɔ', 'n', ' ', 't', 'a', 'ɪ', 'w', 'ˈ', 'ɑ', 'ː', 'n', '.']]
+2026-02-21 08:10:01 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:10:31 │ INFO    │ stt            │ You: Okay, what happened to Philippine's in World War I?
+2026-02-21 08:10:31 │ INFO    │ main           │ User: Okay, what happened to Philippine's in World War I?
+2026-02-21 08:10:38 │ INFO    │ main           │ LLM → intent=search, params={'query': 'Philippine involvement in World War I'}
+2026-02-21 08:10:38 │ DEBUG   │ main           │ LLM response: I'm looking up the Philippines' involvement in World War I for you.
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ primp.utils    │ Loaded CA certs
+2026-02-21 08:10:38 │ DEBUG   │ rquest.connect │ starting new connection: https://en.wikipedia.org/
+2026-02-21 08:10:38 │ DEBUG   │ rquest.connect │ starting new connection: https://grokipedia.com/
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.connect.dns │ resolving en.wikipedia.org
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.connect.dns │ resolving grokipedia.com
+2026-02-21 08:10:38 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2001:df2:e500:ed1a::1]:443
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2606:4700:20::681a:fda]:443
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2001:df2:e500:ed1a::1]:443
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2606:4700:20::681a:fda]:443
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2026-02-21 08:10:38 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://grokipedia.com/, alpn_protos: None, network: default }
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access'
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Last-Access-Global'
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'GeoIP'
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'NetworkProbeLimit'
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'WMF-Uniq'
+2026-02-21 08:10:39 │ INFO    │ primp          │ response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Philippine%20involvement%20in%20World%20War%20I 200
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'grokipedia-affinity'
+2026-02-21 08:10:39 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie '__cf_bm'
+2026-02-21 08:10:39 │ INFO    │ primp          │ response: https://grokipedia.com/api/typeahead?query=Philippine+involvement+in+World+War+I&limit=1 200
+2026-02-21 08:10:39 │ DEBUG   │ rquest.connect │ starting new connection: https://search.yahoo.com/
+2026-02-21 08:10:39 │ DEBUG   │ rquest.util.client.connect.dns │ resolving search.yahoo.com
+2026-02-21 08:10:39 │ DEBUG   │ rquest.util.client.connect.http │ connecting to [2406:2000:e4:1404::3000]:443
+2026-02-21 08:10:40 │ DEBUG   │ rquest.util.client.connect.http │ connected to [2406:2000:e4:1404::3000]:443
+2026-02-21 08:10:40 │ DEBUG   │ rquest.util.client.pool │ pooling idle connection for PoolKey { uri: https://search.yahoo.com/, alpn_protos: None, network: default }
+2026-02-21 08:10:40 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'lkl'
+2026-02-21 08:10:40 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A1'
+2026-02-21 08:10:40 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A3'
+2026-02-21 08:10:40 │ DEBUG   │ cookie_store.cookie_store │ inserting secure cookie 'A1S'
+2026-02-21 08:10:40 │ INFO    │ primp          │ response: https://search.yahoo.com/search;_ylt=I-uMpC4t6ZxwE6blwygepaV8;_ylu=aeJWkERxfeaOQDCk_k6AwAwS7ICCzyzZAm2PAAKEHr5qWUg?p=Philippine+involvement+in+World+War+I 200
+2026-02-21 08:10:41 │ DEBUG   │ piper.voice    │ text=This is a list of direct armed conflicts involving the Philippines since its founding during the Philippine revolution. This excludes battles widely regarded to be part of a larger war and isolated military engagements. Apr 8, 2021 · This paper seeks to present an overview of the Philippine experience in World War I – why Filipinos tried to get involved , and how and in what manner they did get to contribute., phonemes=[['ð', 'ɪ', 's', ' ', 'ɪ', 'z', ' ', 'ɐ', ' ', 'l', 'ˈ', 'ɪ', 's', 't', ' ', 'ʌ', 'v', ' ', 'd', 'ᵻ', 'ɹ', 'ˈ', 'ɛ', 'k', 't', ' ', 'ˈ', 'ɑ', 'ː', 'ɹ', 'm', 'd', ' ', 'k', 'ˈ', 'ɑ', 'ː', 'n', 'f', 'l', 'ɪ', 'k', 't', 's', ' ', 'ɪ', 'n', 'v', 'ˈ', 'ɑ', 'ː', 'l', 'v', 'ɪ', 'ŋ', ' ', 'ð', 'ə', ' ', 'f', 'ˈ', 'ɪ', 'l', 'ᵻ', 'p', 'ˌ', 'i', 'ː', 'n', 'z', ' ', 's', 'ˈ', 'ɪ', 'n', 's', ' ', 'ɪ', 't', 's', ' ', 'f', 'ˈ', 'a', 'ʊ', 'n', 'd', 'ɪ', 'ŋ', ' ', 'd', 'ˈ', 'ʊ', 'ɹ', 'ɹ', 'ɪ', 'ŋ', ' ', 'ð', 'ə', ' ', 'f', 'ˈ', 'ɪ', 'l', 'ᵻ', 'p', 'ˌ', 'i', 'ː', 'n', ' ', 'ɹ', 'ˌ', 'ɛ', 'v', 'ə', 'l', 'ˈ', 'u', 'ː', 'ʃ', 'ə', 'n', '.'], ['ð', 'ɪ', 's', ' ', 'ɛ', 'k', 's', 'k', 'l', 'ˈ', 'u', 'ː', 'd', 'z', ' ', 'b', 'ˈ', 'æ', 'ɾ', 'ə', 'l', 'z', ' ', 'w', 'ˈ', 'a', 'ɪ', 'd', 'l', 'i', ' ', 'ɹ', 'ᵻ', 'ɡ', 'ˈ', 'ɑ', 'ː', 'ɹ', 'd', 'ᵻ', 'd', ' ', 't', 'ə', 'b', 'i', ' ', 'p', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', ' ', 'ə', 'v', 'ə', ' ', 'l', 'ˈ', 'ɑ', 'ː', 'ɹ', 'd', 'ʒ', 'ɚ', ' ', 'w', 'ˈ', 'ɔ', 'ː', 'ɹ', ' ', 'æ', 'n', 'd', ' ', 'ˈ', 'a', 'ɪ', 's', 'ə', 'l', 'ˌ', 'e', 'ɪ', 'ɾ', 'ᵻ', 'd', ' ', 'm', 'ˈ', 'ɪ', 'l', 'ə', 't', 'ˌ', 'ɛ', 'ɹ', 'i', 'ʲ', ' ', 'ɛ', 'ŋ', 'ɡ', 'ˈ', 'e', 'ɪ', 'd', 'ʒ', 'm', 'ə', 'n', 't', 's', '.'], ['ˈ', 'æ', 'p', 'ɹ', 'ə', ' ', 'ˈ', 'e', 'ɪ', 't', ',', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'θ', 'ˈ', 'a', 'ʊ', 'z', 'ə', 'n', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'w', 'ˈ', 'ʌ', 'n', ' ', 'ð', 'ɪ', 's', ' ', 'p', 'ˈ', 'e', 'ɪ', 'p', 'ɚ', ' ', 's', 'ˈ', 'i', 'ː', 'k', 's', ' ', 't', 'ə', ' ', 'p', 'ɹ', 'ɪ', 'z', 'ˈ', 'ɛ', 'n', 't', ' ', 'ɐ', 'n', ' ', 'ˈ', 'o', 'ʊ', 'v', 'ɚ', 'v', 'j', 'ˌ', 'u', 'ː', ' ', 'ʌ', 'v', 'ð', 'ə', ' ', 'f', 'ˈ', 'ɪ', 'l', 'ᵻ', 'p', 'ˌ', 'i', 'ː', 'n', ' ', 'ɛ', 'k', 's', 'p', 'ˈ', 'i', 'ə', 'ɹ', 'ɪ', 'ʲ', 'ə', 'n', 's', ' ', 'ɪ', 'n', ' ', 'w', 'ˈ', 'ɜ', 'ː', 'l', 'd', ' ', 'w', 'ˈ', 'ɔ', 'ː', 'ɹ', ' ', 'ˈ', 'a', 'ɪ', ';', ' ', 'w', 'ˌ', 'a', 'ɪ', ' ', 'f', 'ˌ', 'ɪ', 'l', 'ɪ', 'p', 'ˈ', 'i', 'ː', 'n', 'o', 'ʊ', 'z', ' ', 't', 'ɹ', 'ˈ', 'a', 'ɪ', 'd', ' ', 't', 'ə', ' ', 'ɡ', 'ɛ', 't', ' ', 'ɪ', 'n', 'v', 'ˈ', 'ɑ', 'ː', 'l', 'v', 'd', ',', ' ', 'æ', 'n', 'd', ' ', 'h', 'ˌ', 'a', 'ʊ', ' ', 'æ', 'n', 'd', ' ', 'ɪ', 'n', ' ', 'w', 'ʌ', 't', ' ', 'm', 'ˈ', 'æ', 'n', 'ɚ', ' ', 'ð', 'e', 'ɪ', ' ', 'd', 'ˈ', 'ɪ', 'd', ' ', 'ɡ', 'ɛ', 't', ' ', 't', 'ə', ' ', 'k', 'ə', 'n', 't', 'ɹ', 'ˈ', 'ɪ', 'b', 'j', 'u', 'ː', 't', '.']]
+2026-02-21 08:11:16 │ INFO    │ stt            │ You: You ok the year is now twenty thirty what's going on right now
+2026-02-21 08:11:16 │ INFO    │ main           │ User: You ok the year is now twenty thirty what's going on right now
+2026-02-21 08:11:25 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:11:25 │ DEBUG   │ main           │ LLM response: The current year is 2024, not 2030. There's no official 'twenty thirty'—it's likely a mix-up. Right now, global events include ongoing climate initiatives, geopolitical tensions, and technological advancements. Let me know if you'd like details on a specific area!
+2026-02-21 08:11:25 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:11:25 │ DEBUG   │ piper.voice    │ text=The current year is 2024, not 2030. There's no official 'twenty thirty'—it's likely a mix-up. Right now, global events include ongoing climate initiatives, geopolitical tensions, and technological advancements. Let me know if you'd like details on a specific area!, phonemes=[['ð', 'ə', ' ', 'k', 'ˈ', 'ɜ', 'ː', 'ɹ', 'ə', 'n', 't', ' ', 'j', 'ˈ', 'ɪ', 'ɹ', ' ', 'ɪ', 'z', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'θ', 'ˈ', 'a', 'ʊ', 'z', 'ə', 'n', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', ',', ' ', 'n', 'ˌ', 'ɑ', 'ː', 't', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'θ', 'ˈ', 'a', 'ʊ', 'z', 'ə', 'n', 'd', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', '.'], ['ð', 'ɛ', 'ɹ', 'z', ' ', 'n', 'ˈ', 'o', 'ʊ', ' ', 'ə', 'f', 'ˈ', 'ɪ', 'ʃ', 'ə', 'l', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'θ', 'ˈ', 'ɜ', 'ː', 'ɾ', 'i', ' ', 'ɪ', 't', 's', ' ', 'l', 'ˈ', 'a', 'ɪ', 'k', 'l', 'i', 'ʲ', ' ', 'ɐ', ' ', 'm', 'ˈ', 'ɪ', 'k', 's', 'ˈ', 'ʌ', 'p', '.'], ['ɹ', 'ˈ', 'a', 'ɪ', 't', ' ', 'n', 'ˈ', 'a', 'ʊ', ',', ' ', 'ɡ', 'l', 'ˈ', 'o', 'ʊ', 'b', 'ə', 'l', ' ', 'ᵻ', 'v', 'ˈ', 'ɛ', 'n', 't', 's', ' ', 'ɪ', 'ŋ', 'k', 'l', 'ˈ', 'u', 'ː', 'd', ' ', 'ˈ', 'ɑ', 'ː', 'ŋ', 'ɡ', 'o', 'ʊ', 'ɪ', 'ŋ', ' ', 'k', 'l', 'ˈ', 'a', 'ɪ', 'm', 'ə', 't', ' ', 'ɪ', 'n', 'ˈ', 'ɪ', 'ʃ', 'i', 'ə', 't', 'ˌ', 'ɪ', 'v', 'z', ',', ' ', 'd', 'ʒ', 'ˌ', 'i', 'ː', 'ʲ', 'o', 'ʊ', 'p', 'ə', 'l', 'ˈ', 'ɪ', 'ɾ', 'ɪ', 'k', 'ə', 'l', ' ', 't', 'ˈ', 'ɛ', 'n', 'ʃ', 'ə', 'n', 'z', ',', ' ', 'æ', 'n', 'd', ' ', 't', 'ˌ', 'ɛ', 'k', 'n', 'ə', 'l', 'ˈ', 'ɑ', 'ː', 'd', 'ʒ', 'ɪ', 'k', 'ə', 'l', ' ', 'ɐ', 'd', 'v', 'ˈ', 'æ', 'n', 's', 'm', 'ə', 'n', 't', 's', '.'], ['l', 'ˈ', 'ɛ', 't', ' ', 'm', 'ˌ', 'i', 'ː', ' ', 'n', 'ˈ', 'o', 'ʊ', ' ', 'ɪ', 'f', ' ', 'j', 'u', 'ː', 'd', ' ', 'l', 'ˈ', 'a', 'ɪ', 'k', ' ', 'd', 'i', 'ː', 't', 'ˈ', 'e', 'ɪ', 'l', 'z', ' ', 'ˌ', 'ɔ', 'n', ' ', 'ɐ', ' ', 's', 'p', 'ə', 's', 'ˈ', 'ɪ', 'f', 'ɪ', 'k', ' ', 'ˈ', 'ɛ', 'ɹ', 'i', 'ə', '!']]
+2026-02-21 08:11:25 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:12:01 │ INFO    │ stt            │ You: okay I lied today is not 2030 and you corrected me by saying today is 2024 that is also wrong.
+2026-02-21 08:12:01 │ INFO    │ main           │ User: okay I lied today is not 2030 and you corrected me by saying today is 2024 that is also wrong.
+2026-02-21 08:12:08 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:12:08 │ DEBUG   │ main           │ LLM response: The current year is indeed 2024. If you have a specific question or need clarification, feel free to ask!
+2026-02-21 08:12:08 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:12:08 │ DEBUG   │ piper.voice    │ text=The current year is indeed 2024. If you have a specific question or need clarification, feel free to ask!, phonemes=[['ð', 'ə', ' ', 'k', 'ˈ', 'ɜ', 'ː', 'ɹ', 'ə', 'n', 't', ' ', 'j', 'ˈ', 'ɪ', 'ɹ', ' ', 'ɪ', 'z', ' ', 'ˌ', 'ɪ', 'n', 'd', 'ˈ', 'i', 'ː', 'd', ' ', 't', 'ˈ', 'u', 'ː', ' ', 'θ', 'ˈ', 'a', 'ʊ', 'z', 'ə', 'n', 'd', ' ', 't', 'w', 'ˈ', 'ɛ', 'n', 't', 'i', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', '.'], ['ɪ', 'f', ' ', 'j', 'u', 'ː', ' ', 'h', 'æ', 'v', ' ', 'ɐ', ' ', 's', 'p', 'ə', 's', 'ˈ', 'ɪ', 'f', 'ɪ', 'k', ' ', 'k', 'w', 'ˈ', 'ɛ', 's', 't', 'ʃ', 'ə', 'n', ' ', 'ɔ', 'ː', 'ɹ', ' ', 'n', 'ˈ', 'i', 'ː', 'd', ' ', 'k', 'l', 'ˌ', 'æ', 'ɹ', 'ɪ', 'f', 'ɪ', 'k', 'ˈ', 'e', 'ɪ', 'ʃ', 'ə', 'n', ',', ' ', 'f', 'ˈ', 'i', 'ː', 'l', ' ', 'f', 'ɹ', 'ˈ', 'i', 'ː', ' ', 't', 'ʊ', ' ', 'ˈ', 'æ', 's', 'k', '!']]
+2026-02-21 08:12:08 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:15:31 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-21 08:15:33 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-21 08:15:34 │ INFO    │ main           │ ==================================================
+2026-02-21 08:15:34 │ INFO    │ main           │ LUMEN starting up
+2026-02-21 08:15:34 │ INFO    │ main           │ ==================================================
+2026-02-21 08:15:34 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-21 08:15:34 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-21 08:15:34 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-21 08:15:34 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-21 08:15:34 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-21 08:15:34 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:15:34 │ INFO    │ audio          │ Initializing shared PyAudio (PortAudio).
+2026-02-21 08:15:34 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:15:40 │ INFO    │ stt            │ You: Lumen wake up.
+2026-02-21 08:15:40 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 08:15:40 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:15:40 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 08:15:40 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-21 08:15:40 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-21 08:15:42 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-21 08:15:42 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]
+2026-02-21 08:15:45 │ INFO    │ stt            │ You: I'm awake.
+2026-02-21 08:15:45 │ INFO    │ main           │ User: I'm awake.
+2026-02-21 08:15:48 │ ERROR   │ llm            │ LM Studio API 400: {
+    "error": {
+        "message": "No models loaded. Please load a model in the developer page or use the 'lms load' command.",
+        "type": "invalid_request_error",
+        "param": "model",
+   
+2026-02-21 08:15:48 │ INFO    │ main           │ LLM → intent=chat, params={}
+2026-02-21 08:15:48 │ DEBUG   │ main           │ LLM response: LM Studio returned error 400.
+2026-02-21 08:15:48 │ DEBUG   │ piper.voice    │ text=LM Studio returned error 400., phonemes=[['ˌ', 'ɛ', 'l', 'ˈ', 'ɛ', 'm', ' ', 's', 't', 'ˈ', 'u', 'ː', 'd', 'ɪ', 'ʲ', 'ˌ', 'o', 'ʊ', ' ', 'ɹ', 'ᵻ', 't', 'ˈ', 'ɜ', 'ː', 'n', 'd', ' ', 'ˈ', 'ɛ', 'ɹ', 'ɚ', ' ', 'f', 'ˈ', 'ɔ', 'ː', 'ɹ', 'h', 'ˈ', 'ʌ', 'n', 'd', 'ɹ', 'ɪ', 'd', '.']]
+2026-02-21 08:15:48 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 08:15:48 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 09:04:19 │ INFO    │ stt            │ Loading Whisper 'base' on CUDA (float16)...
+2026-02-21 09:04:21 │ INFO    │ stt            │ Whisper loaded on GPU.
+2026-02-21 09:04:21 │ INFO    │ main           │ ==================================================
+2026-02-21 09:04:21 │ INFO    │ main           │ LUMEN starting up
+2026-02-21 09:04:21 │ INFO    │ main           │ ==================================================
+2026-02-21 09:04:21 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IHDR' 16 13
+2026-02-21 09:04:21 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 41 4096
+2026-02-21 09:04:21 │ DEBUG   │ PIL.PngImagePlugin │ STREAM b'IDAT' 319714 6
+2026-02-21 09:04:21 │ DEBUG   │ asyncio        │ Using proactor: IocpProactor
+2026-02-21 09:04:21 │ INFO    │ main           │ AI loop started. Wake phrase: 'lumen wake up', timeout: 120s
+2026-02-21 09:04:21 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 09:04:21 │ INFO    │ audio          │ Initializing shared PyAudio (PortAudio).
+2026-02-21 09:04:22 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 09:09:30 │ DEBUG   │ stt            │ Filtered hallucination: 'You You You You You You You You You You You'
+2026-02-21 09:09:30 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 09:09:30 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 09:09:36 │ INFO    │ stt            │ You: Lumen Wake Up
+2026-02-21 09:09:36 │ INFO    │ main           │ Woke up via wake phrase.
+2026-02-21 09:09:36 │ DEBUG   │ stt            │ I'm listening...
+2026-02-21 09:09:36 │ INFO    │ stt            │ Mic opened: rate=16000, channels=1
+2026-02-21 09:09:36 │ INFO    │ tts            │ Loading Piper voice: en_US-lessac-medium.onnx
+2026-02-21 09:09:36 │ DEBUG   │ piper.voice    │ Guessing voice config path: D:\LUMEN\V1\models\piper\en_US-lessac-medium.onnx.json
+2026-02-21 09:09:38 │ INFO    │ tts            │ Piper voice loaded.
+2026-02-21 09:09:38 │ DEBUG   │ piper.voice    │ text=I'm awake. How can I help you, Chart?, phonemes=[['a', 'ɪ', 'm', ' ', 'ɐ', 'w', 'ˈ', 'e', 'ɪ', 'k', '.'], ['h', 'ˌ', 'a', 'ʊ', ' ', 'k', 'æ', 'n', ' ', 'a', 'ɪ', ' ', 'h', 'ˈ', 'ɛ', 'l', 'p', ' ', 'j', 'u', 'ː', ',', ' ', 't', 'ʃ', 'ˈ', 'ɑ', 'ː', 'ɹ', 't', '?']]

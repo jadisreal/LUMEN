@@ -1,9 +1,17 @@
 import os
 import time
+import queue
 import random
 import customtkinter as ctk
 from collections import deque
 from PIL import Image, ImageTk, ImageDraw, ImageFilter
+
+# Set Windows app identity so the taskbar shows our icon, not Python's
+try:
+    import ctypes
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("lumen.assistant.v1")
+except Exception:
+    pass
 
 
 ctk.set_appearance_mode("dark")
@@ -18,8 +26,19 @@ class LumenUI:
         self.root.geometry("760x960")
         self.root.configure(fg_color="#e4a700")
 
+        # ── Set window / taskbar icon from face image ─────────
+        try:
+            icon_img = Image.open(face_path).resize((64, 64), Image.LANCZOS)
+            self._icon_ref = ImageTk.PhotoImage(icon_img)
+            self.root.iconphoto(True, self._icon_ref)
+        except Exception:
+            pass  # icon is cosmetic — don't crash if it fails
+
         self.size = size
         self.center_y = 0.38
+
+        # --- Thread-safe command queue (polled from main thread) ---
+        self._cmd_queue: queue.Queue = queue.Queue()
 
         # --- Face canvas (still tk.Canvas for image compositing) ---
         import tkinter as tk
@@ -46,6 +65,7 @@ class LumenUI:
         self.halo_alpha = 70
         self.target_halo_alpha = 70
         self.last_target_time = time.time()
+        self._photo_ref = None  # prevent GC of current PhotoImage
 
         # --- Status indicator ---
         self.status_label = ctk.CTkLabel(
@@ -77,6 +97,7 @@ class LumenUI:
         self.typing_queue = deque()
         self.is_typing = False
 
+        self._poll_queue()   # start polling the thread-safe queue
         self._animate()
         self.root.protocol("WM_DELETE_WINDOW", lambda: os._exit(0))
 
@@ -97,11 +118,39 @@ class LumenUI:
 
         return img.filter(ImageFilter.GaussianBlur(30))
 
+    # ── Thread-safe command queue ─────────────────────────────
+    def _poll_queue(self):
+        """Drain the command queue on the main thread (runs every 30ms)."""
+        try:
+            while True:
+                cmd, args = self._cmd_queue.get_nowait()
+                cmd(*args)
+        except queue.Empty:
+            pass
+        except Exception:
+            pass
+        self.root.after(30, self._poll_queue)
+
+    def _schedule(self, fn, *args):
+        """Put a callable on the queue so it runs on the main thread."""
+        self._cmd_queue.put_nowait((fn, args))
+
+    # ── Public API (all thread-safe) ─────────────────────────
     def set_status(self, text: str, color: str = "#3a9bdc"):
-        """Update the status indicator."""
-        self.status_label.configure(text=f"● {text}", text_color=color)
+        """Update the status indicator (thread-safe)."""
+        self._schedule(self._set_status_main, text, color)
+
+    def _set_status_main(self, text: str, color: str):
+        try:
+            self.status_label.configure(text=f"● {text}", text_color=color)
+        except Exception:
+            pass
 
     def write_log(self, text: str):
+        """Queue a message for the log box (thread-safe)."""
+        self._schedule(self._write_log_main, text)
+
+    def _write_log_main(self, text: str):
         self.typing_queue.append(text)
         if not self.is_typing:
             self._start_typing()
@@ -114,18 +163,25 @@ class LumenUI:
         self.is_typing = True
         text = self.typing_queue.popleft()
 
-        self.text_box.configure(state="normal")
+        try:
+            self.text_box.configure(state="normal")
+        except Exception:
+            self.is_typing = False
+            return
         self._type_char(text, 0)
 
     def _type_char(self, text, i):
-        if i < len(text):
-            self.text_box.insert("end", text[i])
-            self.text_box.see("end")
-            self.root.after(12, self._type_char, text, i + 1)
-        else:
-            self.text_box.insert("end", "\n")
-            self.text_box.configure(state="disabled")
-            self.root.after(40, self._start_typing)
+        try:
+            if i < len(text):
+                self.text_box.insert("end", text[i])
+                self.text_box.see("end")
+                self.root.after(12, self._type_char, text, i + 1)
+            else:
+                self.text_box.insert("end", "\n")
+                self.text_box.configure(state="disabled")
+                self.root.after(40, self._start_typing)
+        except Exception:
+            self.is_typing = False
 
     def start_speaking(self):
         self.speaking = True
@@ -135,7 +191,22 @@ class LumenUI:
         self.speaking = False
         self.set_status("LISTENING", "#3a9bdc")
 
+    def is_alive(self) -> bool:
+        """Check if the UI root still exists."""
+        try:
+            return self.root.winfo_exists()
+        except Exception:
+            return False
+
+    # ── Animation loop (main thread only) ────────────────────
     def _animate(self):
+        try:
+            self._animate_inner()
+        except Exception:
+            pass  # never let animation kill the app
+        self.root.after(16, self._animate)
+
+    def _animate_inner(self):
         now = time.time()
 
         if now - self.last_target_time > (0.25 if self.speaking else 0.7):
@@ -173,6 +244,4 @@ class LumenUI:
         img = ImageTk.PhotoImage(frame)
         self.canvas.delete("all")
         self.canvas.create_image(w // 2, h // 2, image=img)
-        self.canvas.image = img
-
-        self.root.after(16, self._animate)
+        self._photo_ref = img  # prevent GC — stable reference
